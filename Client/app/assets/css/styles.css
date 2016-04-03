@@ -11,7 +11,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: grey;
-  background: #f5f5f5;
+  background: lightgrey;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -26,6 +26,7 @@ h6 {
   font-weight: 700;
 }
 a {
+  text-decoration: underline;
   color: #2d7788;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -34,7 +35,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #1a454f;
+  color: orange;
 }
 a:focus {
   text-decoration: none;
@@ -62,6 +63,11 @@ p {
 }
 .sidebar-wrapper a {
   color: #fff;
+     text-decoration: none;
+
+}
+.sidebar-wrapper a:hover {
+  color: orange;
 }
 .sidebar-wrapper .profile-container {
   padding: 30px;
