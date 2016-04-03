@@ -1,35 +1,37 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using Business_Logic.Database;
+using Contracts;
 
 namespace Server.Controllers
 {
     public class CompanyController : ApiController
     {
-        // GET: api/Company
-        public IEnumerable<string> Get()
+
+        private CompanyHandler _companyHandler;
+
+        public CompanyController()
         {
-            return new string[] { "value1", "value2" };
+            _companyHandler = new CompanyHandler();
+        }
+        public IEnumerable<Company> Get()
+        {
+            return _companyHandler.Get();
         }
 
-        // GET: api/Company/5
-        public string Get(int id)
+        public Company Get(int id)
         {
-            return "value";
+            return _companyHandler.Get(id);
         }
 
-        // POST: api/Company
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Company company)
         {
+            _companyHandler.Post(company);
         }
 
-        // PUT: api/Company/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Company/5
         public void Delete(int id)
         {
+            _companyHandler.Delete(id);
         }
     }
 }
