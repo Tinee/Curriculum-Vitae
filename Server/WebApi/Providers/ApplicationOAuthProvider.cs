@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
+using Business_Logic.Database;
+using DataService;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
@@ -16,6 +17,12 @@ namespace Server.Providers
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
         private readonly string _publicClientId;
+        private CompanyHandler _companyHandler;
+
+        public ApplicationOAuthProvider()
+        {
+            _companyHandler = new CompanyHandler(new DataContext());
+        }
 
         public ApplicationOAuthProvider(string publicClientId)
         {
@@ -31,13 +38,18 @@ namespace Server.Providers
         {
             var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
 
-            ApplicationUser user = await userManager.FindAsync(context.UserName, context.Password);
+            var databaseUser = _companyHandler.Get().FirstOrDefault(x => x.Name == context.UserName);
 
-            if (user == null)
+            if ((databaseUser == null || databaseUser.Password != context.Password))
             {
                 context.SetError("invalid_grant", "The user name or password is incorrect.");
                 return;
             }
+
+            ApplicationUser user = new ApplicationUser
+            {
+                UserName = databaseUser.Name
+            };
 
             ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(userManager,
                OAuthDefaults.AuthenticationType);

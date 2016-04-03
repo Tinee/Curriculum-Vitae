@@ -30,7 +30,8 @@ namespace Mappers
             {
                 Id = x.Id,
                 Name = x.Name,
-                Website = x.Website
+                Website = x.Website,
+                Password = x.Password
             });
         }
 
@@ -71,7 +72,8 @@ namespace Mappers
             {
                 Name = company.Name,
                 Id = company.Id,
-                Website = company.Website
+                Website = company.Website,
+                Password = company.Password
             };
         }
 
@@ -118,7 +120,8 @@ namespace Mappers
             {
                 Website = x.Website,
                 Id = x.Id,
-                Name = x.Name
+                Name = x.Name,
+                Password = x.Password
             });
         }
 
@@ -158,7 +161,8 @@ namespace Mappers
             {
                 Website = company.Website,
                 Id = company.Id,
-                Name = company.Name
+                Name = company.Name,
+                Password = company.Password
             };
         }
 

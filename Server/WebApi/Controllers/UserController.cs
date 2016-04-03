@@ -6,6 +6,7 @@ using DataService;
 
 namespace Server.Controllers
 {
+    [Authorize]
     public class UserController : ApiController
     {
         private UserHandler _userHandler;
