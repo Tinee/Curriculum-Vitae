@@ -14,6 +14,7 @@ namespace Server.Controllers
         {
             _personalLetterHandler = new PersonalLettersHandler(new DataContext());
         }
+
         public List<User> Get()
         {
             return _personalLetterHandler.Get();
