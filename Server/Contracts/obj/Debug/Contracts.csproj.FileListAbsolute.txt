@@ -1,0 +1,5 @@
+C:\Users\Marcus\Documents\Curriculum-Vitae\Contracts\bin\Debug\Contracts.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Contracts\bin\Debug\Contracts.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Contracts\obj\Debug\Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Documents\Curriculum-Vitae\Contracts\obj\Debug\Contracts.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Contracts\obj\Debug\Contracts.pdb

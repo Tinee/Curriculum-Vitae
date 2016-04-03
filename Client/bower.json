@@ -1,0 +1,17 @@
+{
+  "name": "Curriculum-Vitae",
+  "description": "Cv for an Devoloper",
+  "main": "index.js",
+  "authors": [
+    "Marcus Tine Carlsson"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Tinee/Curriculum-Vitae",
+  "moduleType": [],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "jquery": "^2.2.2"
+  }
+}

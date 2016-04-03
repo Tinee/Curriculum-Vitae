@@ -1,0 +1,7 @@
+C:\Users\Marcus\Documents\Curriculum-Vitae\Database Entities\bin\Debug\Database Entities.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Database Entities\bin\Debug\Database Entities.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Database Entities\obj\Debug\Database Entities.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Database Entities\obj\Debug\Database Entities.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Database Entities\bin\Debug\Enums.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Database Entities\bin\Debug\Enums.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Database Entities\obj\Debug\Database Entities.csprojResolveAssemblyReference.cache

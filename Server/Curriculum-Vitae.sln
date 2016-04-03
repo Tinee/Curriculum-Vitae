@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "WebApi\Api.csproj", "{E37EE8BD-FD38-497E-ADD6-C7B0092E2CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{2C4BD00C-2F84-4436-A742-7A485B28F80B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService\DataService.csproj", "{E3CD0F7E-5435-4B00-A13A-478355AC6DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database Entities", "Database Entities\Database Entities.csproj", "{48889BBA-E611-49C2-AAA8-07B1799A6441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business Logic", "Business Logic\Business Logic.csproj", "{DBEBD985-41DC-49A6-BF49-FC955CD78A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{38A387E7-0468-4D49-98CB-A9EF1F337A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappers", "Mappers\Mappers.csproj", "{481017A1-BE69-4E39-A65A-8B58A7968178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E37EE8BD-FD38-497E-ADD6-C7B0092E2CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E37EE8BD-FD38-497E-ADD6-C7B0092E2CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E37EE8BD-FD38-497E-ADD6-C7B0092E2CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E37EE8BD-FD38-497E-ADD6-C7B0092E2CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C4BD00C-2F84-4436-A742-7A485B28F80B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4BD00C-2F84-4436-A742-7A485B28F80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4BD00C-2F84-4436-A742-7A485B28F80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4BD00C-2F84-4436-A742-7A485B28F80B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3CD0F7E-5435-4B00-A13A-478355AC6DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3CD0F7E-5435-4B00-A13A-478355AC6DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3CD0F7E-5435-4B00-A13A-478355AC6DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3CD0F7E-5435-4B00-A13A-478355AC6DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48889BBA-E611-49C2-AAA8-07B1799A6441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48889BBA-E611-49C2-AAA8-07B1799A6441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48889BBA-E611-49C2-AAA8-07B1799A6441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48889BBA-E611-49C2-AAA8-07B1799A6441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEBD985-41DC-49A6-BF49-FC955CD78A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEBD985-41DC-49A6-BF49-FC955CD78A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEBD985-41DC-49A6-BF49-FC955CD78A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBEBD985-41DC-49A6-BF49-FC955CD78A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A387E7-0468-4D49-98CB-A9EF1F337A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A387E7-0468-4D49-98CB-A9EF1F337A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A387E7-0468-4D49-98CB-A9EF1F337A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A387E7-0468-4D49-98CB-A9EF1F337A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481017A1-BE69-4E39-A65A-8B58A7968178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481017A1-BE69-4E39-A65A-8B58A7968178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481017A1-BE69-4E39-A65A-8B58A7968178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481017A1-BE69-4E39-A65A-8B58A7968178}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

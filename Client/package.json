@@ -1,0 +1,22 @@
+{
+  "name": "Curriculum-Vitae",
+  "version": "1.0.0",
+  "description": "Cv for an Devoloper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tinee/Curriculum-Vitae.git"
+  },
+  "author": "Marcus Tine Carlsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tinee/Curriculum-Vitae/issues"
+  },
+  "homepage": "https://github.com/Tinee/Curriculum-Vitae",
+  "devDependencies": {
+    "gulp-webserver": "^0.9.1"
+  }
+}
