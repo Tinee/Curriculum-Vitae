@@ -14,19 +14,19 @@ namespace Business_Logic.Database
             return _uow.CompanyRepository.Get().ToContracts();
         }
 
-        public User Get(int id)
+        public Company Get(int id)
         {
-            return _uow.UserRepository.Get(id).ToContract();
+            return _uow.CompanyRepository.Get(id).ToContract();
         }
 
-        public void Post(User user)
+        public void Post(Company company)
         {
-            _uow.UserRepository.CreateOrUpdate(user.ToDatabaseEntitie());
+            _uow.CompanyRepository.CreateOrUpdate(company.ToDatabaseEntitie());
         }
 
         public void Delete(int id)
         {
-            _uow.UserRepository.Delete(id);
+            _uow.CompanyRepository.Delete(id);
         }
     }
 }
