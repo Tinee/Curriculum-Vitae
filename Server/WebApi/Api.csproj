@@ -176,8 +176,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -217,6 +217,10 @@
     <ProjectReference Include="..\DataService\DataService.csproj">
       <Project>{e3cd0f7e-5435-4b00-a13a-478355ac6ddf}</Project>
       <Name>DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mappers\Mappers.csproj">
+      <Project>{481017a1-be69-4e39-a65a-8b58a7968178}</Project>
+      <Name>Mappers</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
