@@ -20,10 +20,10 @@
    <link id="theme-style" rel="stylesheet" href="app/assets/css/styles.css">
 </head>
 
-<body>
+<body ng-cloak>
    <div ui-view class="wrapper">
-
-   </div>
+ </div>
+  
    <footer class="footer">
       <div class="text-center">
          <small class="copyright"> Logik av <a href="https://github.com/Tinee" target="_blank">Marcus Carlsson</a> </small>
@@ -48,6 +48,11 @@
    
    <!-- Services-->
      <script type="text/javascript" src="app/factories/levelbar.js"></script>
+     
+   <!-- Dataservice-->
+     <script type="text/javascript" src="app/core/dataservice.js"></script>
+   
+     
    
 </body>
 
