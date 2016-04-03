@@ -1,35 +1,37 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using Business_Logic.Database;
+using Contracts;
+using DataService;
 
 namespace Server.Controllers
 {
     public class PersonalLetterController : ApiController
     {
-        // GET: api/PersonalLetter
-        public IEnumerable<string> Get()
+        private PersonalLettersHandler _personalLetterHandler;
+
+        public PersonalLetterController()
         {
-            return new string[] { "value1", "value2" };
+            _personalLetterHandler = new PersonalLettersHandler(new DataContext());
+        }
+        public List<User> Get()
+        {
+            return _personalLetterHandler.Get();
         }
 
-        // GET: api/PersonalLetter/5
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+            return _personalLetterHandler.Get(id);
         }
 
-        // POST: api/PersonalLetter
-        public void Post([FromBody]string value)
+        public void Post([FromBody]User user)
         {
+            _personalLetterHandler.Post(user);
         }
 
-        // PUT: api/PersonalLetter/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/PersonalLetter/5
         public void Delete(int id)
         {
+            _personalLetterHandler.Delete(id);
         }
     }
 }
