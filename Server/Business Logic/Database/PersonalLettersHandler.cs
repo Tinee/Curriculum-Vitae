@@ -6,11 +6,10 @@ using Mappers;
 
 namespace Business_Logic.Database
 {
-    public class UserHandler
+    public class PersonalLettersHandler
     {
         private UnitOfWork _uow;
-
-        public UserHandler(object dataContext)
+        public PersonalLettersHandler(object dataContext)
         {
             _uow = new UnitOfWork((DataContext)dataContext);
         }

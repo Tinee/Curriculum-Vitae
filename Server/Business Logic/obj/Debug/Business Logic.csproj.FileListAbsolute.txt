@@ -18,3 +18,6 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Business Logic\bin\Debug\Enums.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Business Logic\obj\Debug\Business Logic.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Business Logic\obj\Debug\Business Logic.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Business Logic\obj\Debug\Business Logic.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\obj\Debug\Business Logic.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\obj\Debug\Business Logic.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\obj\Debug\Business Logic.pdb

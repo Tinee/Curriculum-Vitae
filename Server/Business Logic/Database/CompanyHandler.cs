@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Contracts;
 using DataLayer.Logic.Database.UnitOfWork;
+using DataService;
 using Mappers;
 
 namespace Business_Logic.Database
@@ -8,6 +9,11 @@ namespace Business_Logic.Database
     public class CompanyHandler
     {
         private UnitOfWork _uow;
+
+        public CompanyHandler(object dataContext)
+        {
+            _uow = new UnitOfWork((DataContext)dataContext);
+        }
 
         public List<Company> Get()
         {

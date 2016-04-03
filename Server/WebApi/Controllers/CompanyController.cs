@@ -2,6 +2,7 @@
 using System.Web.Http;
 using Business_Logic.Database;
 using Contracts;
+using DataService;
 
 namespace Server.Controllers
 {
@@ -12,7 +13,7 @@ namespace Server.Controllers
 
         public CompanyController()
         {
-            _companyHandler = new CompanyHandler();
+            _companyHandler = new CompanyHandler(new DataContext());
         }
         public IEnumerable<Company> Get()
         {

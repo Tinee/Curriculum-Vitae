@@ -172,3 +172,6 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\WebApi\bin\Enums.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\WebApi\obj\Debug\Api.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\WebApi\obj\Debug\Server.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\WebApi\obj\Debug\Server.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\obj\Debug\Api.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\obj\Debug\Server.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\obj\Debug\Server.pdb

@@ -2,6 +2,7 @@
 using System.Web.Http;
 using Business_Logic.Database;
 using Contracts;
+using DataService;
 
 namespace Server.Controllers
 {
@@ -11,7 +12,7 @@ namespace Server.Controllers
 
         public UserController()
         {
-            _userHandler = new UserHandler(); 
+            _userHandler = new UserHandler(new DataContext()); 
         }
         public List<User> Get()
         {

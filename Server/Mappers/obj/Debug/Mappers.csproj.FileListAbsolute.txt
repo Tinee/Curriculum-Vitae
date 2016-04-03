@@ -9,3 +9,6 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Mappers\bin\Debug\Enums.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Mappers\obj\Debug\Mappers.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Mappers\obj\Debug\Mappers.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Mappers\obj\Debug\Mappers.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\obj\Debug\Mappers.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\obj\Debug\Mappers.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\obj\Debug\Mappers.pdb
