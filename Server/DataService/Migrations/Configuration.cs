@@ -20,7 +20,8 @@ namespace DataService.Migrations
             {
                 Id = 1,
                 Name = "It-Mästaren",
-                Website = "Itmastaren.se"
+                Website = "Itmastaren.se",
+                Password = "itm"
             };
             
             var user = new User

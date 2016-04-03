@@ -32,3 +32,4 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataServ
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.csproj.GenerateResource.Cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.Third20160403.resources
