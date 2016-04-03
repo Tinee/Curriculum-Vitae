@@ -30,6 +30,7 @@ namespace Server.Controllers
 
         public void Delete(int id)
         {
+            _userHandler.Delete(id);
         }
     }
 }
