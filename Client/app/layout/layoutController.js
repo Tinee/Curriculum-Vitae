@@ -5,8 +5,8 @@
       .module('layout.module')
       .controller('LayoutController', LayoutController);
 
-   LayoutController.$inject = ['levelbar'];
-   function LayoutController(levelbar) {
+   LayoutController.$inject = ['levelbar','dataservice'];
+   function LayoutController(levelbar,dataservice) {
       var vm = this;
       
 
@@ -15,7 +15,11 @@
       ////////////////
 
       function activate() {
-         levelbar.getValues()
+         levelbar.getValues();
+         
+         dataservice.company().query().$promise.then(function(response){
+            var x = response;
+         });
        }
    }
 })();
