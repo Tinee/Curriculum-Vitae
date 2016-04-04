@@ -16,10 +16,6 @@
 
       function activate() {
          levelbar.getValues();
-         
-         dataservice.company().query().$promise.then(function(response){
-            var x = response;
-         });
        }
    }
 })();
