@@ -21,11 +21,9 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\DataServ
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\Database Entities.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\Enums.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\Database Entities.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.xml
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Debug\Enums.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.First20160403.resources
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.Second20160403.resources
@@ -33,3 +31,4 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataServ
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.Third20160403.resources
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.NewDb20160404.resources

@@ -30,11 +30,9 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\DataS
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\Mappers.dll
-C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\Enums.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\Contracts.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\Database Entities.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\DataService.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\Mappers.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.xml
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\Enums.pdb

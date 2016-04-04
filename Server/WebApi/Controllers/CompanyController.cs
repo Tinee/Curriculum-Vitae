@@ -15,15 +15,6 @@ namespace Server.Controllers
         {
             _companyHandler = new CompanyHandler(new DataContext());
         }
-        public IEnumerable<Company> Get()
-        {
-            return _companyHandler.Get();
-        }
-
-        public Company Get(int id)
-        {
-            return _companyHandler.Get(id);
-        }
 
         public void Post([FromBody]Company company)
         {

@@ -226,7 +226,6 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.WebPages
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.WebPages.Razor.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\WebGrease.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Database Entities.dll
-C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Enums.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Business Logic.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Contracts.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\DataService.pdb
@@ -260,4 +259,3 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Microsoft.Owin.Secu
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Http.Owin.xml
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Database Entities.pdb
-C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Enums.pdb

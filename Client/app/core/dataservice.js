@@ -21,9 +21,5 @@
         function personalLetters() {
             return $resource(baseAdress + 'api/personalletters/:id', { id: '@id' });
         }
-        
-        function company() {
-            return $resource(baseAdress + 'api/company/:id', { id: '@id' });
-        }
    }
 })();

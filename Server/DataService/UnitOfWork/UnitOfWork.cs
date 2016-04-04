@@ -7,7 +7,6 @@ namespace DataLayer.Logic.Database.UnitOfWork
     {
         private readonly object _db;
 
-        private GenericRepository<User> _userRepository;
         private GenericRepository<Company> _companyRepository;
         private GenericRepository<PersonalLetter> _personalLetter;
         public UnitOfWork(object db)
@@ -15,17 +14,7 @@ namespace DataLayer.Logic.Database.UnitOfWork
             _db = db;
         }
 
-        public GenericRepository<User> UserRepository
-        {
-            get
-            {
-                if (_userRepository == null)
-                {
-                    _userRepository = new GenericRepository<User>(_db);
-                }
-                return _userRepository;
-            }
-        }
+ 
 
         public GenericRepository<Company> CompanyRepository
         {

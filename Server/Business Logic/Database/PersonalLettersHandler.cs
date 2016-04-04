@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Contracts;
 using DataLayer.Logic.Database.UnitOfWork;
 using DataService;
@@ -14,24 +15,27 @@ namespace Business_Logic.Database
             _uow = new UnitOfWork((DataContext)dataContext);
         }
 
-        public List<User> Get()
+        public List<PersonalLetter> Get()
         {
-            return _uow.UserRepository.Get().ToContracts();
+            return _uow.PersonalLetterRepository.Get().ToContracts();
         }
 
-        public User Get(int id)
+        public PersonalLetter Get(string companyPassword)
         {
-            return _uow.UserRepository.Get(id).ToContract();
+            var companyId = _uow.CompanyRepository.Get(x => x.Password == companyPassword).FirstOrDefault()?.Id;
+            return companyId == null ? null : _uow.PersonalLetterRepository.Get().FirstOrDefault(x => x.Id == companyId).ToContract();
         }
 
-        public void Post(User user)
+        public void Post(PersonalLetter personalLetter)
         {
-            _uow.UserRepository.CreateOrUpdate(user.ToDatabaseEntitie());
+            _uow.PersonalLetterRepository.CreateOrUpdate(personalLetter.ToDatabaseEntitie());
         }
 
         public void Delete(int id)
         {
-            _uow.UserRepository.Delete(id);
+            var personalLetter = _uow.PersonalLetterRepository.Get(id);
+            personalLetter.Active = false;
+            _uow.PersonalLetterRepository.CreateOrUpdate(personalLetter);
         }
     }
 }

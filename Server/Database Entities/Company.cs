@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Database_Entities
 {
@@ -13,6 +14,5 @@ namespace Database_Entities
         public string Website { get; set; }
         [DataType(DataType.Password)]
         public string Password { get; set; }
-
     }
 }

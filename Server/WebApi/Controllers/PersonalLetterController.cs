@@ -3,6 +3,7 @@ using System.Web.Http;
 using Business_Logic.Database;
 using Contracts;
 using DataService;
+using Microsoft.Ajax.Utilities;
 
 namespace Server.Controllers
 {
@@ -15,19 +16,18 @@ namespace Server.Controllers
             _personalLetterHandler = new PersonalLettersHandler(new DataContext());
         }
 
-        public List<User> Get()
+        [Route("api/personalLetter/{companyPassword}")]
+        public IHttpActionResult GetByCompanyPassword(string companyPassword)
         {
-            return _personalLetterHandler.Get();
+            var response = _personalLetterHandler.Get(companyPassword);
+
+            if (response == null) return BadRequest();
+            return Ok(response);
         }
 
-        public User Get(int id)
+        public void Post([FromBody]PersonalLetter personalLetter)
         {
-            return _personalLetterHandler.Get(id);
-        }
-
-        public void Post([FromBody]User user)
-        {
-            _personalLetterHandler.Post(user);
+            _personalLetterHandler.Post(personalLetter);
         }
 
         public void Delete(int id)

@@ -12,7 +12,7 @@ namespace DataService
         }
 
         public DbSet<Company> Companies { get; set; }
-        public DbSet<User> Users { get; set; }
+  
         public DbSet<PersonalLetter> PersonalLetters { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

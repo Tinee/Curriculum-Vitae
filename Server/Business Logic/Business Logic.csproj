@@ -52,7 +52,6 @@
     <Compile Include="Account\LoginHandler.cs" />
     <Compile Include="Database\CompanyHandler.cs" />
     <Compile Include="Database\PersonalLettersHandler.cs" />
-    <Compile Include="Database\UserHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
