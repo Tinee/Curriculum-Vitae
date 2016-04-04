@@ -11,7 +11,6 @@
 
         var services = {
            personalLetters:personalLetters,
-           company:company
         };
 
         return services;
