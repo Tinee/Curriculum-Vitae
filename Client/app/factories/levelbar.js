@@ -26,9 +26,7 @@
             $(this).animate({
                width: itemWidth
             }, 800);
-
          });
-
       }
    }
 })();

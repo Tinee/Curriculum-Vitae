@@ -18,7 +18,7 @@
         ////////////////
         
         function personalLetters() {
-            return $resource(baseAdress + 'api/personalletters/:id', { id: '@id' });
+            return $resource(baseAdress + 'api/personalletter/:companyKey', { companyKey: '@companyKey' });
         }
    }
 })();

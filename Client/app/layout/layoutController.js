@@ -16,6 +16,11 @@
 
       function activate() {
          levelbar.getValues();
+         dataservice.personalLetters().get({companyKey:"itm"},function(response){
+            var x = response;
+         },function(err){
+            alert('Error');
+         });
        }
    }
 })();
