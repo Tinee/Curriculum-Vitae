@@ -38,7 +38,7 @@
             
             $('#myModal').modal('hide');
             
-             toastr.success('Jag hittade erat personliga brev.', 'Välkommen ' + vm.personalLetter.Company.Name, {
+             toastr.success('Erat personliga brev ligger nu på hemsidan.', 'Välkommen ' + vm.personalLetter.Company.Name, {
                     timeOut: 6000,
                     closeButton: true
                 });
