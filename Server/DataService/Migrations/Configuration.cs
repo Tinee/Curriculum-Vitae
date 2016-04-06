@@ -19,7 +19,8 @@ namespace DataService.Migrations
                 Id = 1,
                 Name = "It-Mästaren",
                 Website = "Itmastaren.se",
-                Password = "itm"
+                Password = "itm",
+                Active = true
             };
 
             var company2 = new Company
@@ -27,7 +28,8 @@ namespace DataService.Migrations
                 Id = 2,
                 Name = "Nethouse",
                 Website = "Nethouse.se",
-                Password = "nethouse2016personalcv"
+                Password = "nethouse2016personalcv",
+                Active = true
             };
 
             var personalLetterItm = new PersonalLetter
@@ -36,7 +38,7 @@ namespace DataService.Migrations
                 Company = company,
                 Description = "Jag testar detta sätt att lägga till ett personligt cv för att allt ska bli simpelt för mig att ge ut cv till företagen jag söker till, jag tror inte på tomtet och försöker nu bara skriva så långt jag kan komma på för att se formatet på hemsidan när den hämtar data där ifrån. Ha en bra dag så hörs vi senare i den fina skogen med många björnar och oxar.",
                 Id = 1,
-                LoginCount = 0
+                DownloadCount = 0
             };
 
             var personalLetterNH = new PersonalLetter
@@ -45,7 +47,7 @@ namespace DataService.Migrations
                 Company = company2,
                 Description = "Jag testar detta sätt att lägga till ett personligt cv för att allt ska bli simpelt för mig att ge ut cv till företagen jag söker till, jag tror inte på tomtet och försöker nu bara skriva så långt jag kan komma på för att se formatet på hemsidan när den hämtar data där ifrån. Ha en bra dag så hörs vi senare i den fina skogen med många björnar och oxar.",
                 Id = 2,
-                LoginCount = 0
+                DownloadCount = 0
             };
 
 

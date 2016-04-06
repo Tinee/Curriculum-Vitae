@@ -1,0 +1,4 @@
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Enums\bin\Release\Enums.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Enums\bin\Release\Enums.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Enums\obj\Release\Enums.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Enums\obj\Release\Enums.pdb

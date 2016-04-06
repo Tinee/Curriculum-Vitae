@@ -23,7 +23,7 @@ namespace Business_Logic.Database
         public PersonalLetter Get(string companyPassword)
         {
             var companyId = _uow.CompanyRepository.Get(x => x.Password == companyPassword).FirstOrDefault()?.Id;
-            return companyId == null ? null : _uow.PersonalLetterRepository.Get().FirstOrDefault(x => x.Id == companyId).ToContract();
+            return companyId == null ? null :  _uow.PersonalLetterRepository.GetAll().FirstOrDefault(x => x.Company.Id == companyId).ToContract();
         }
 
         public void Post(PersonalLetter personalLetter)

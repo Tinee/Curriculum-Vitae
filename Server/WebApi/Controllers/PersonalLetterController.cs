@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
+﻿using System.Web.Http;
 using Business_Logic.Database;
 using Contracts;
 using DataService;
-using Microsoft.Ajax.Utilities;
 
 namespace Server.Controllers
 {
@@ -22,6 +20,10 @@ namespace Server.Controllers
             var response = _personalLetterHandler.Get(companyPassword);
 
             if (response == null) return BadRequest();
+
+            response.DownloadCount++;
+            _personalLetterHandler.Post(response);
+
             return Ok(response);
         }
 

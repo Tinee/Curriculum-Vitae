@@ -32,3 +32,4 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataServ
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.Third20160403.resources
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.NewDb20160404.resources
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.NewDbSecond20160406.resources

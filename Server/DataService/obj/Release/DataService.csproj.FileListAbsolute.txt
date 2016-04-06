@@ -1,0 +1,18 @@
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\DataService.dll.config
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\DataService.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\DataService.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\Database Entities.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\EntityFramework.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\Database Entities.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\EntityFramework.xml
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.First20160403.resources
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.Second20160403.resources
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.Third20160403.resources
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.NewDb20160404.resources
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.NewDbSecond20160406.resources
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.csproj.GenerateResource.Cache
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.pdb

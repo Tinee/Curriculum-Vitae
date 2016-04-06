@@ -34,7 +34,7 @@ namespace Mappers
                Active = x.Active,
                Company = x.Company.ToContract(),
                Description = x.Description,
-               LoginCount = x.LoginCount,
+                DownloadCount = x.DownloadCount,
             });
         }
 
@@ -64,7 +64,7 @@ namespace Mappers
                 Company = personalLetter.Company.ToContract(),
                 Description = personalLetter.Description,
                 Id = personalLetter.Id,
-                LoginCount = personalLetter.LoginCount,
+                DownloadCount = personalLetter.DownloadCount,
             };
         }
 
@@ -101,7 +101,7 @@ namespace Mappers
                 Company = x.Company.ToDatabaseEntitie(),
                 Description = x.Description,
                 Id = x.Id,
-                LoginCount = x.LoginCount,
+                DownloadCount = x.DownloadCount,
             });
         }
 
@@ -129,7 +129,7 @@ namespace Mappers
                 Company = personalLetter.Company.ToDatabaseEntitie(),
                 Description = personalLetter.Description,
                 Id = personalLetter.Id,
-                LoginCount = personalLetter.LoginCount,
+                DownloadCount = personalLetter.DownloadCount,
             };
         }
 

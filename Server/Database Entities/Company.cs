@@ -14,5 +14,7 @@ namespace Database_Entities
         public string Website { get; set; }
         [DataType(DataType.Password)]
         public string Password { get; set; }
+        public bool Active { get; set; }
+
     }
 }
