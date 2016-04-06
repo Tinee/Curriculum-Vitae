@@ -7,7 +7,7 @@
 
    dataservice.$inject = ['$resource'];
    function dataservice($resource) {
-      var baseAdress = 'http://localhost:2911/';
+      var baseAdress = 'http://marcuscarlssonapi.azurewebsites.net/';
 
         var services = {
            personalLetters:personalLetters,
