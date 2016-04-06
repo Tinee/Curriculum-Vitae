@@ -49,10 +49,11 @@
          Skickar vid begäran.
       </ul>
    </div>
-    <div class="interests-container container-block">
+   <div ng-hide="vm.foundLetter" class="interests-container container-block">
       <h2 class="container-block-title">Personligt Brev</h2>
       <ul class="list-unstyled interests-list">
-        <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.openModal()">här</a> för att skriva in en företags nyckel.</p>
+         <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.openModal()">här</a> för att skriva in en företags
+            nyckel.</p>
       </ul>
    </div>
 </div>
@@ -64,11 +65,11 @@
       <section>
          <div class="modal-content">
             <div style="background-color:#42A8C0;" class="modal-header" style="padding:35px 50px;">
-            <center>
-               <h3 style="color:white;font-family:Roboto">Hämta Personligt Brev</h4>
+               <center>
+                  <h3 style="color:white;font-family:Roboto">Hämta Personligt Brev</h4>
             <center/>
                
-              <span style="color:white;font-family:Roboto;font-size:16px"> Har du en företags nyckel och vill komma åt erat personliga cv?</span>
+              <span style="color:white;font-family:Roboto;font-size:16px"> Har du en företags nyckel och vill komma åt erat personliga brev?</span>
             </div>
             <center>
             <div class="modal-body" style="padding:40px 50px;">
@@ -116,7 +117,7 @@
          <div class="meta">
             <div class="upper-row">
                <h3 class="job-title">Säljare</h3>
-               <div class="time">2013 - 2014</div>
+                  <div class="time">2013 - 2014</div>
             </div>
             <div class="company">Reffekt AB</div>
          </div>
@@ -127,22 +128,22 @@
             <span> Detta har för mig varit givande vid
                      många tillfällen i min vardag.  </span>
          </div>
-      </div>
-      <div class="item">
-         <div class="meta">
-            <div class="upper-row">
-               <h3 class="job-title">Elektriker</h3>
-               <div class="time">2014 - 2015</div>
-            </div>
-            <div class="company">Stigebäck Larssons El</div>
+   </div>
+   <div class="item">
+      <div class="meta">
+         <div class="upper-row">
+            <h3 class="job-title">Elektriker</h3>
+            <div class="time">2014 - 2015</div>
          </div>
-         <div class="details">
-            <span>Jobbade sex månader som installations elektriker, där jag fick göra mindre uppgifter eftersom jag var lärling.
+         <div class="company">Stigebäck Larssons El</div>
+      </div>
+      <div class="details">
+         <span>Jobbade sex månader som installations elektriker, där jag fick göra mindre uppgifter eftersom jag var lärling.
                         Avslutade karriären eftersom jag skulle börja studera .NET utveckling.</span>
-         </div>
       </div>
+   </div>
    </section>
-    <section ng-show="vm.foundLetter" class="section projects-section">
+   <section ng-show="vm.foundLetter" class="section projects-section">
       <h2 class="section-title"><i class="fa fa-paper-plane"></i>Personligt Brev</h2>
       <div class="intro">
       </div>
@@ -172,10 +173,10 @@
       <div class="intro">
       </div>
       <div class="item">
-         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Barbershop">Bokningssystem För Frisörer</a></span>         - <span class="project-tagline">System för att kunder ska kunna boka tid hos en frisör online. Bästa med det är projektet var alla nya tekniker och principer som ligger bakom när det kommer till server sidan av programmering. </span>
+         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Barbershop">Bokningssystem För Frisörer</a></span>         - <span class="project-tagline">System för att kunder ska kunna boka tid hos en frisör online. Bästa med det här projektet var alla nya tekniker och principer som ligger bakom när det kommer till server sidan av programmering. </span>
       </div>
       <div class="item">
-         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/NemoClient">Instämplingssystem</a></span>         - <span class="project-tagline">Redan från start hade jag en stark plan att jag ville breda mina kunskaper inom frontend, så jag försökte lära mig allt om hur man ska bära sig åt för att vara en stark frontend utvecklare. </span>
+         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/NemoClient">Instämplingssystem</a></span>         - <span class="project-tagline">Redan från start hade jag en stark plan att jag ville bredda mina kunskaper inom frontend, så jag försökte lära mig allt om hur man ska bära sig åt för att vara en stark frontend utvecklare. </span>
       </div>
       <div class="item">
          <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Curriculum-Vitae">Mitt Cv</a></span>         - <span class="project-tagline">Hemsidan du tittar på just nu finns på github ifall det skulle vara intressant att kolla på källkoden. Både servern och klienten finns där.</span>
@@ -187,7 +188,14 @@
          <div class="item">
             <h3 class="level-title">C#</h3>
             <div class="level-bar">
-               <div class="level-bar-inner" data-level="84%">
+               <div class="level-bar-inner" data-level="96%">
+               </div>
+            </div>
+         </div>
+         <div class="item">
+            <h3 class="level-title">Web-Api</h3>
+            <div class="level-bar">
+               <div class="level-bar-inner" data-level="85%">
                </div>
             </div>
          </div>
@@ -202,13 +210,6 @@
             <h3 class="level-title">Code First Migrations</h3>
             <div class="level-bar">
                <div class="level-bar-inner" data-level="72%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Web-Api</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="69%">
                </div>
             </div>
          </div>
@@ -248,6 +249,13 @@
             </div>
          </div>
          <div class="item">
+            <h3 class="level-title">Active Directory</h3>
+            <div class="level-bar">
+               <div class="level-bar-inner" data-level="43%">
+               </div>
+            </div>
+         </div>
+         <div class="item">
             <h3 class="level-title">Angular Material Design</h3>
             <div class="level-bar">
                <div class="level-bar-inner" data-level="40%">
@@ -272,13 +280,6 @@
             <h3 class="level-title">HTML5 &amp; CSS</h3>
             <div class="level-bar">
                <div class="level-bar-inner" data-level="33%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Active Directory</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="27%">
                </div>
             </div>
          </div>
