@@ -49,7 +49,14 @@
          Skickar vid begäran.
       </ul>
    </div>
+    <div class="interests-container container-block">
+      <h2 class="container-block-title">Personligt Brev</h2>
+      <ul class="list-unstyled interests-list">
+        <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.openModal()">här</a> för att skriva in en företags nyckel.</p>
+      </ul>
+   </div>
 </div>
+
 <div class="modal fade" id="myModal" role="dialog">
    <div class="modal-dialog">
 
@@ -68,11 +75,11 @@
                <form role="form">
                   <div class="form-group">
                      <label for="usrname"><span class="glyphicon glyphicon-heart-empty"></span> Företags nyckel</label>
-                     <input style="width:50%" type="text" class="form-control" id="usrname" placeholder="Nyckel">
+                     <input ng-model="vm.companyKey" style="width:50%" type="text" class="form-control" id="usrname" placeholder="Nyckel">
                   </div>
                   <div class="checkbox">
                   </div>
-                  <button ng-click="vm.xx(ev)" style="width:40%" type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Hämta</button>
+                  <button ng-click="vm.getPersonalLetter(vm.companyKey)" style="width:40%" type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Hämta</button>
                </form>
             </div>
          </div>
@@ -133,6 +140,14 @@
             <span>Jobbade sex månader som installations elektriker, där jag fick göra mindre uppgifter eftersom jag var lärling.
                         Avslutade karriären eftersom jag skulle börja studera .NET utveckling.</span>
          </div>
+      </div>
+   </section>
+    <section ng-show="vm.foundLetter" class="section projects-section">
+      <h2 class="section-title"><i class="fa fa-paper-plane"></i>Personligt Brev</h2>
+      <div class="intro">
+      </div>
+      <div class="item">
+         <span class="project-tagline">{{vm.personalLetter.Description}} </span>
       </div>
    </section>
    <section class="section projects-section">
