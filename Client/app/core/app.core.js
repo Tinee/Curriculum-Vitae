@@ -3,6 +3,7 @@
 
    angular.module('app.core', [
       'ngResource',
-      'ui.router'
+      'ui.router',
+      'toastr'
    ]);
 })();
