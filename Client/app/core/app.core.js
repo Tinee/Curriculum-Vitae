@@ -4,6 +4,7 @@
    angular.module('app.core', [
       'ngResource',
       'ui.router',
-      'toastr'
+      'toastr',
+      'LocalStorageModule',
    ]);
 })();
