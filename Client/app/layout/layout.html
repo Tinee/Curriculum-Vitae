@@ -53,7 +53,15 @@
       <h2 class="container-block-title">Personligt Brev</h2>
       <ul class="list-unstyled interests-list">
          <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.openModal()">här</a> för att skriva in en företags
-            nyckel.</p>
+            nyckel.
+         </p>
+      </ul>
+   </div>
+   <div ng-hide="!vm.foundLetter" class="interests-container container-block">
+      <h2 class="container-block-title">Gästläge</h2>
+      <ul class="list-unstyled interests-list">
+         <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.removeLocalStorageItem('personalLetter')">här</a> för att gå tillbaka till gästläge.
+         </p>
       </ul>
    </div>
 </div>
@@ -89,28 +97,25 @@
 </div>
 </center>
 </section>
-
 <div class="main-wrapper">
    <section class="section summary-section">
       <h2 class="section-title"><i class="fa fa-user"></i>Om mig</h2>
       <div class="summary">
          <span>Idag läser jag till Microsoft .NET – Cloud Computing Utvecklare på EC-Utbildning i Örebro.</span>
          <br>
-         <!--<span>När det kommer till uppgifter både
-                  i arbete och i vardagen så är jag fast besluten att få det gjort med bästa möjliga resultat. </span>-->
-         <span>Jag är väldigt social och kommer alltid överens med människor runt omkring mig. Bor just nu i Örebro men har inge hinder på vart jag kan tänka mig jobba. </span>
+     
+         <span>Jag är väldigt social och kommer alltid överens med människor runt omkring mig. Jag bor just nu i Örebro men kan tänka mig att flytta. </span>
          <br>
          <br>
          <span>Under min utbildning som .NET utvecklare har jag alltid försökt mig på nya tekniker och språk för att bli en så mångsidig utvecklare som jag bara kan bli.</span>
          <br>
          <br>
-         <span>Mitt mål inom mitt yrke som utvecklare är att bli en så kallad fullstack utvecklare, jag föredrar att inte vara inriktad till ett specifikt område såsom frontend eller backend, utan kunna alla väsentliga bitar för ta en idé till en distribuerad produkt. </span>
+         <span>Mitt mål som  utvecklare är att bli en så kallad fullstack utvecklare, jag föredrar att inte vara inriktad till ett specifikt område såsom frontend eller backend, utan kunna alla väsentliga bitar för ta en idé till en distribuerad produkt. </span>
          <br>
          <span>Vad jag söker hos min arbetsgivare är ett företag där jag får ta mycket eget ansvar och möjligheten till att vidareutveckla mina kunskaper. </span>
       </div>
    </section>
-
-
+  
    <section class="section experiences-section">
       <h2 class="section-title"><i class="fa fa-briefcase"></i>Erfarenheter</h2>
       <div class="item">
@@ -133,7 +138,7 @@
       <div class="meta">
          <div class="upper-row">
             <h3 class="job-title">Elektriker</h3>
-            <div class="time">2014 - 2015</div>
+            <div class="time">2013 - 2014</div>
          </div>
          <div class="company">Stigebäck Larssons El</div>
       </div>
@@ -142,14 +147,6 @@
                         Avslutade karriären eftersom jag skulle börja studera .NET utveckling.</span>
       </div>
    </div>
-   </section>
-   <section ng-show="vm.foundLetter" class="section projects-section">
-      <h2 class="section-title"><i class="fa fa-paper-plane"></i>Personligt Brev</h2>
-      <div class="intro">
-      </div>
-      <div class="item">
-         <span class="project-tagline">{{vm.personalLetter.Description}} </span>
-      </div>
    </section>
    <section class="section projects-section">
       <h2 class="section-title"><i class="fa fa-university"></i>Praktiker</h2>
@@ -180,6 +177,14 @@
       </div>
       <div class="item">
          <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Curriculum-Vitae">Mitt Cv</a></span>         - <span class="project-tagline">Hemsidan du tittar på just nu finns på github ifall det skulle vara intressant att kolla på källkoden. Både servern och klienten finns där.</span>
+      </div>
+   </section>
+   <section ng-show="vm.foundLetter" class="section projects-section">
+      <h2 class="section-title"><i class="fa fa-paper-plane"></i>Personligt Brev</h2>
+      <div class="intro">
+      </div>
+      <div class="item">
+         <span class="project-tagline">{{vm.personalLetter.Description}} </span>
       </div>
    </section>
    <section class="skills-section section">
@@ -254,6 +259,7 @@
                <div class="level-bar-inner" data-level="43%">
                </div>
             </div>
+            
          </div>
          <div class="item">
             <h3 class="level-title">Angular Material Design</h3>
