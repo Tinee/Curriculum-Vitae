@@ -9,7 +9,6 @@
    function LayoutController(levelbar, dataservice, toastr, localStorageService) {
       var vm = this;
 
-      var localStoragePersonalLetter =
          vm.personalLetter = null;
       vm.foundLetter = false;
       vm.companyKey = "";
