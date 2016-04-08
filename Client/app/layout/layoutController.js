@@ -9,7 +9,7 @@
    function LayoutController(levelbar, dataservice, toastr, localStorageService) {
       var vm = this;
 
-         vm.personalLetter = null;
+      vm.personalLetter = null;
       vm.foundLetter = false;
       vm.companyKey = "";
 
@@ -28,7 +28,7 @@
             $("#myModal").modal();
 
          }
-         {
+         else {
             vm.foundLetter = true;
             vm.personalLetter = personalLetter;
          }

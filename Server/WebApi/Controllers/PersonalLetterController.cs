@@ -19,7 +19,7 @@ namespace Server.Controllers
         {
             var response = _personalLetterHandler.Get(companyPassword);
 
-            if (response == null) return BadRequest();
+            if (response == null) return NotFound();
 
             response.DownloadCount++;
             _personalLetterHandler.Post(response);
@@ -32,9 +32,9 @@ namespace Server.Controllers
             _personalLetterHandler.Post(personalLetter);
         }
 
-        public void Delete(int id)
-        {
-            _personalLetterHandler.Delete(id);
-        }
+        //public void Delete(int id)
+        //{
+        //    _personalLetterHandler.Delete(id);
+        //}
     }
 }
