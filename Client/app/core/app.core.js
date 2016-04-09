@@ -6,5 +6,6 @@
       'ui.router',
       'toastr',
       'LocalStorageModule',
+      'blockUI'
    ]);
 })();
