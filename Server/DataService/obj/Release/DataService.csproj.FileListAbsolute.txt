@@ -16,3 +16,4 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataSe
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.csproj.GenerateResource.Cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.TableAdmin.resources
