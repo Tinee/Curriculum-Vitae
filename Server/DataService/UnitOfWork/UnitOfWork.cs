@@ -9,12 +9,11 @@ namespace DataLayer.Logic.Database.UnitOfWork
 
         private GenericRepository<Company> _companyRepository;
         private GenericRepository<PersonalLetter> _personalLetter;
+        private GenericRepository<Admin> _adminsRepository;
         public UnitOfWork(object db)
         {
             _db = db;
         }
-
- 
 
         public GenericRepository<Company> CompanyRepository
         {
@@ -37,6 +36,18 @@ namespace DataLayer.Logic.Database.UnitOfWork
                     _personalLetter = new GenericRepository<PersonalLetter>(_db);
                 }
                 return _personalLetter;
+            }
+        }
+
+        public GenericRepository<Admin> AdminRepository
+        {
+            get
+            {
+                if (_adminsRepository == null)
+                {
+                    _adminsRepository = new GenericRepository<Admin>(_db);
+                }
+                return _adminsRepository;
             }
         }
 

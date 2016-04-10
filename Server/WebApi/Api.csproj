@@ -176,6 +176,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CompaniesController.cs" />
     <Compile Include="Controllers\PersonalLetterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -212,6 +214,10 @@
     <ProjectReference Include="..\Contracts\Contracts.csproj">
       <Project>{2c4bd00c-2f84-4436-a742-7a485b28f80b}</Project>
       <Name>Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Database Entities\Database Entities.csproj">
+      <Project>{48889BBA-E611-49C2-AAA8-07B1799A6441}</Project>
+      <Name>Database Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataService\DataService.csproj">
       <Project>{e3cd0f7e-5435-4b00-a13a-478355ac6ddf}</Project>

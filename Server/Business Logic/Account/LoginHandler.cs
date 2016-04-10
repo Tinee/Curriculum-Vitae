@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using Contracts;
 using DataLayer.Logic.Database.UnitOfWork;
 using DataService;
@@ -11,18 +10,16 @@ namespace Business_Logic.Account
     {
         private UnitOfWork _uow;
 
-        public LoginHandler(object datacontext)
+        public LoginHandler()
         {
-            _uow = new UnitOfWork((DataContext)datacontext);
+            _uow = new UnitOfWork(new DataContext());
         }
-        public bool AttemptLogin(int companyId, string password)
+        public Admin AttemptLogin(string email, string password)
         {
-            var company = _uow.CompanyRepository.Get(companyId);
+            var admin = _uow.AdminRepository.Get().FirstOrDefault(x => x.Email == email);
 
-            if (company == null) return false;
-            if (company.Password != password) return false;
-
-            return true;
+            if (admin == null) return null;
+            return password != admin.Password ? null : admin.ToContract();
         }
     }
 }

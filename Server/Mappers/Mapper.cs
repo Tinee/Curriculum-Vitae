@@ -11,8 +11,6 @@ namespace Mappers
 
         #region ListMappers
 
-        
-
         public static List<Company> ToContracts(this IEnumerable<Database_Entities.Company> companies)
         {
             var listUsers = companies.ToList();
@@ -38,12 +36,25 @@ namespace Mappers
             });
         }
 
+        public static List<Admin> ToContracts(this IEnumerable<Database_Entities.Admin> admins)
+        {
+            var listUsers = admins.ToList();
+            return listUsers.ConvertAll(x => new Admin
+            {
+                Id = x.Id,
+                Email = x.Email,
+                Firstname = x.Firstname,
+                Lastname = x.Lastname,
+                Password = x.Password
+            });
+        }
+
         #endregion
 
 
         #region ObjectMappers
 
-      
+
 
         public static Company ToContract(this Database_Entities.Company company)
         {
@@ -68,17 +79,28 @@ namespace Mappers
             };
         }
 
+        public static Admin ToContract(this Database_Entities.Admin admin)
+        {
+            return new Admin
+            {
+                Email = admin.Email,
+                Firstname = admin.Firstname,
+                Id = admin.Id,
+                Lastname = admin.Lastname,
+                Password = admin.Password
+            };
+        }
+
         #endregion
 
 
         #endregion
-
 
         #region ToDatabaseEntities
 
         #region ListMappers
 
-     
+
 
         public static List<Database_Entities.Company> ToDatabaseEntities(this IEnumerable<Company> companies)
         {
@@ -133,9 +155,20 @@ namespace Mappers
             };
         }
 
-        #endregion
+        public static Database_Entities.Admin ToDatabaseEntitie(this Admin admin)
+        {
+            return new Database_Entities.Admin
+            {
+                Email = admin.Email,
+                Firstname = admin.Firstname,
+                Id = admin.Id,
+                Lastname = admin.Lastname,
+                Password = admin.Password
+            };
+        }
 
         #endregion
 
+        #endregion
     }
 }

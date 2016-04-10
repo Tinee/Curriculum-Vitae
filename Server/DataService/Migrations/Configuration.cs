@@ -50,7 +50,6 @@ namespace DataService.Migrations
                 DownloadCount = 0
             };
 
-
             context.Companies.AddOrUpdate(company);
             context.Companies.AddOrUpdate(company2);
             context.PersonalLetters.AddOrUpdate(personalLetterItm);

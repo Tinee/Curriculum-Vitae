@@ -1,27 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
+using Business_Logic.Account;
 using Business_Logic.Database;
+using Contracts;
+using DataLayer.Logic.Database.UnitOfWork;
 using DataService;
-using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using Server.Models;
 
 namespace Server.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
         private readonly string _publicClientId;
-        private CompanyHandler _companyHandler;
 
         public ApplicationOAuthProvider()
         {
-            _companyHandler = new CompanyHandler(new DataContext());
         }
 
         public ApplicationOAuthProvider(string publicClientId)
@@ -34,32 +31,20 @@ namespace Server.Providers
             _publicClientId = publicClientId;
         }
 
-        public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
+        public override async Task  GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
+            var loginHandler = new LoginHandler();
 
-            var databaseUser = _companyHandler.Get().FirstOrDefault(x => x.Name == context.UserName);
+            var admin = loginHandler.AttemptLogin(context.UserName,context.Password);
 
-            if ((databaseUser == null || databaseUser.Password != context.Password))
-            {
-                context.SetError("invalid_grant", "The user name or password is incorrect.");
-                return;
-            }
+            if (admin == null) return;
 
-            ApplicationUser user = new ApplicationUser
-            {
-                UserName = databaseUser.Name
-            };
+            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+            identity.AddClaim(new Claim("sub", context.UserName));
+            identity.AddClaim(new Claim("role", "Admin"));
 
-            ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(userManager,
-               OAuthDefaults.AuthenticationType);
-            ClaimsIdentity cookiesIdentity = await user.GenerateUserIdentityAsync(userManager,
-                CookieAuthenticationDefaults.AuthenticationType);
 
-            AuthenticationProperties properties = CreateProperties(user.UserName);
-            AuthenticationTicket ticket = new AuthenticationTicket(oAuthIdentity, properties);
-            context.Validated(ticket);
-            context.Request.Context.Authentication.SignIn(cookiesIdentity);
+            context.Validated(identity);
         }
 
         public override Task TokenEndpoint(OAuthTokenEndpointContext context)

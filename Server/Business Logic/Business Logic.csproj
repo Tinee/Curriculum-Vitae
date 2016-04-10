@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\LoginHandler.cs" />
+    <Compile Include="Database\AdminHandler.cs" />
     <Compile Include="Database\CompanyHandler.cs" />
     <Compile Include="Database\PersonalLettersHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

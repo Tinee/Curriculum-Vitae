@@ -5,6 +5,7 @@ using DataService;
 
 namespace Server.Controllers
 {
+    [AllowAnonymous]
     public class PersonalLetterController : ApiController
     {
         private PersonalLettersHandler _personalLetterHandler;
@@ -31,10 +32,5 @@ namespace Server.Controllers
         {
             _personalLetterHandler.Post(personalLetter);
         }
-
-        //public void Delete(int id)
-        //{
-        //    _personalLetterHandler.Delete(id);
-        //}
     }
 }
