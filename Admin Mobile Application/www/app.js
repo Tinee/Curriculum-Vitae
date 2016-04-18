@@ -1,6 +1,12 @@
 
 angular.module('app', [
-   'app.core'
+   'app.core',
+   
+   'app.tabs',
+   'app.companies',
+   'app.account',
+   'app.login',
+   'app.auth'
    ])
 
 .run(function($ionicPlatform) {
@@ -25,35 +31,45 @@ angular.module('app', [
     .state('tab', {
     url: '/tab',
     abstract: true,
-    templateUrl: 'templates/tabs.html'
+    templateUrl: 'tabs/tabs.html',
+    controller: 'TabsController as vm'
   })
 
-  .state('tab.chats', {
+  .state('tab.companies', {
       url: '/chats',
       views: {
         'tab-chats': {
-          templateUrl: 'templates/tab-companies.html',
-          controller: 'CompaniesController'
+          templateUrl: 'companies/companies/companies.html',
+          controller: 'CompaniesController as vm'
         }
       }
     })
     
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
+    .state('tab.company-detail', {
+      url: '/chats/:id',
       views: {
         'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+          templateUrl: 'companies/company-details/companies-detail.html',
+           controller: 'CompanyDetailController as vm'
         }
       }
     })
+      . state('tab.login', {
+      url: '/login',
+      views: {
+        'tab-login': {
+          templateUrl: 'login/login.html',
+          controller: 'LoginController as vm'
+        }
+      }
+      })
 
   .state('tab.account', {
     url: '/account',
     views: {
       'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+        templateUrl: 'account/account.html',
+        controller: 'AccountController as vm'
       }
     }
   });
