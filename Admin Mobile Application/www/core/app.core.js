@@ -3,7 +3,8 @@
 
    angular.module('app.core', [
       'ionic',
-      'starter.controllers',
-      'starter.services'
+     
+      'app.services',
+      'ngResource'
    ]);
 })();
