@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using System.Web.UI.WebControls;
 using Business_Logic.Account;
 using Business_Logic.Database;
@@ -30,9 +31,10 @@ namespace Server.Providers
 
             _publicClientId = publicClientId;
         }
-
         public override async Task  GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
+            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+
             var loginHandler = new LoginHandler();
 
             var admin = loginHandler.AttemptLogin(context.UserName,context.Password);

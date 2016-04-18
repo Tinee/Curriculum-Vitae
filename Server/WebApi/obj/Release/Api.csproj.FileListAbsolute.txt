@@ -85,3 +85,6 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Database Entities.p
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\obj\Release\Api.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\obj\Release\Server.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\obj\Release\Server.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Cors.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Http.Cors.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Http.Cors.xml

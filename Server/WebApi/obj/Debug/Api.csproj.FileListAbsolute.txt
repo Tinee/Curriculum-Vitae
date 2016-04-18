@@ -259,3 +259,6 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Microsoft.Owin.Secu
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Http.Owin.xml
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\Database Entities.pdb
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Cors.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Http.Cors.dll
+C:\Users\Marcus\Documents\Curriculum-Vitae\Server\WebApi\bin\System.Web.Http.Cors.xml

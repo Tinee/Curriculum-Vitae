@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using System.Collections.Generic;
+using System.Web.Http;
 using Business_Logic.Database;
 using Contracts;
 using DataService;
@@ -15,9 +16,9 @@ namespace Server.Controllers
             _companyHandler = new CompanyHandler(new DataContext());
         }
 
-        public IHttpActionResult Get()
+        public IEnumerable<Company> Get()
         {
-            return Ok(_companyHandler.Get());
+            return _companyHandler.Get();
         }
 
         public IHttpActionResult Get(int id)

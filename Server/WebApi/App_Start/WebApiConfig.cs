@@ -1,5 +1,6 @@
 ﻿using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Microsoft.Owin.Security.OAuth;
 
 
@@ -12,6 +13,9 @@ namespace Server
 
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
+
+            var cors = new EnableCorsAttribute("*","*","*");
+            config.EnableCors(cors);
 
             config.MapHttpAttributeRoutes();
 

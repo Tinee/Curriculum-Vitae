@@ -1,11 +1,12 @@
-﻿using System.Web.Http;
+﻿using System.Collections.Generic;
+using System.Web.Http;
 using Business_Logic.Database;
 using Contracts;
 using DataService;
 
 namespace Server.Controllers
 {
-    [AllowAnonymous]
+    
     public class PersonalLetterController : ApiController
     {
         private PersonalLettersHandler _personalLetterHandler;
@@ -15,6 +16,13 @@ namespace Server.Controllers
             _personalLetterHandler = new PersonalLettersHandler(new DataContext());
         }
 
+        [Authorize]
+        public IEnumerable<PersonalLetter> Get()
+        {
+            return _personalLetterHandler.Get();
+        }
+
+        [AllowAnonymous]
         [Route("api/personalLetter/{companyPassword}")]
         public IHttpActionResult GetByCompanyPassword(string companyPassword)
         {
