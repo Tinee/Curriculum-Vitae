@@ -1,31 +1,33 @@
-(function () {
-   'use strict';
+(function() {
+    'use strict';
 
-   angular
-      .module('app.login')
-      .controller('LoginController', LoginController);
+    angular
+        .module('app.login')
+        .controller('LoginController', LoginController);
 
-   LoginController.$inject = ['authService'];
-   function LoginController(authService) {
-      var vm = this;
+    LoginController.$inject = ['authService'];
+    function LoginController(authService) {
+        var vm = this;
 
-      vm.loginForm = {
-         userName: "",
-         password: ""
-      };
+        vm.message = "";
+        vm.loginForm = {
+            userName: "",
+            password: ""
+        };
 
-      vm.login = function () {
-         
-         authService.login(vm.loginForm).then(function (response) {
-         },
-            function (err) {
-               vm.message = err.error_description;
-            });
-      };
-      activate();
 
-      ////////////////
+        vm.login = function() {
 
-      function activate() { }
-   }
+            authService.login(vm.loginForm).then(function(response) {
+            },
+                function(err) {
+                    vm.message = 'Fel vid inloggning, försök igen.'
+                });
+        };
+        activate();
+
+        ////////////////
+
+        function activate() { }
+    }
 })();
