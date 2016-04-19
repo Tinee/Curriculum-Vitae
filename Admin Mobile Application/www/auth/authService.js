@@ -31,8 +31,6 @@
 
          $http.post(serviceBase + 'token', data, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).success(function (response) {
 
-            // $http.get(serviceBase + 'api/login?username=' + loginData.userName,{headers: { 'Authorization': 'Bearer ' + response.access_token  }})
-            //     .success(function(data) {
             window.localStorage.setItem('token', angular.toJson({ token: response.access_token }));
 
             _authentication.isAuth = true;
@@ -40,18 +38,14 @@
 
             $location.path('/tab/companies');
             window.location.reload();
-            //     });
-
 
             deferred.resolve(response);
 
          }).error(function (err, status) {
-            _logOut();
             deferred.reject(err);
          });
 
          return deferred.promise;
-
       };
 
       var _logOut = function () {
@@ -74,8 +68,7 @@
       };
 
       authServiceFactory.login = _login;
-      //  authServiceFactory.logOut = _logOut;
-      //  authServiceFactory.fillAuthData = _fillAuthData;
+
       authServiceFactory.authentication = _authentication;
 
       return authServiceFactory;
