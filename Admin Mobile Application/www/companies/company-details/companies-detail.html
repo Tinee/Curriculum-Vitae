@@ -1,9 +1,25 @@
-<ion-view view-title="{{vm.data.Company.Name}}">
-  <ion-content class="padding">
-    <!--<img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>-->
-    {{vm.data.Description}}
-  </ion-content>
+<ion-view>
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button class="button">
+            <i class="ion-arrow-left-c"></i> Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="padding">
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <h1>{{vm.data.Company.Name}}</h1>
+                <p>{{vm.data.Company.Website}}</p>
+            </div>
+
+            <div class="item item-body">
+                <p>
+                    {{vm.data.Description}}
+                </p>
+                <p class="subdued">
+                    {{vm.data.DownloadCount}} Downloads
+                </p>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>
