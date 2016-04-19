@@ -7,19 +7,19 @@
     <ion-content class="padding">
         <div class="list card">
             <div class="item item-avatar">
-                <h1 style="font-family:Verdana; color:green">{{vm.data.Company.Name}}</h1>
+                <h1 style="font-family:Verdana; color:green; text-shadow: 1px 1px black;">{{vm.data.Company.Name}}</h1>
                 <h2>{{vm.data.Company.Website}}</h2>
             </div>
             <div class="item item-body">
                 <p style="font-family:Verdana">
                     {{vm.data.Description}}
                 </p>
-                    <p style="color:blue" class="subdued">
-                        {{vm.data.DownloadCount}} Downloads
-                    </p>
-                    <p style="color:red" class="subdued">
-                        {{vm.data.Company.Password}}
-                    </p>
+                <p style="color:blue;" class="subdued">
+                    {{vm.data.DownloadCount}} Downloads
+                </p>
+                <p style="color:red; 1px 1px black" class="subdued">
+                    {{vm.data.Company.Password}}
+                </p>
             </div>
         </div>
     </ion-content>

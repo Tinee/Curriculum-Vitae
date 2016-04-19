@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Business_Logic.Account;
 using Contracts;
 using DataLayer.Logic.Database.UnitOfWork;
 using DataService;
@@ -27,6 +28,7 @@ namespace Business_Logic.Database
 
         public void Post(Company company)
         {
+            company.Password = PasswordHandler.CreatePassword();
             _uow.CompanyRepository.CreateOrUpdate(company.ToDatabaseEntitie());
         }
 
