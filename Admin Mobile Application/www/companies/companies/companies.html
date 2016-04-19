@@ -15,10 +15,10 @@
         <ion-list>
             <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="personalLetter in vm.personalLetters" type="item-text-wrap"
             href="#/tab/chats/{{$index}}">
-                <h2>{{personalLetter.Company.Name}}</h2>
+                <h3>{{personalLetter.Company.Name}}</h3>
                 <i class="icon ion-chevron-right icon-accessory"></i>
-                <ion-option-button class="button-assertive" ng-click="remove(personalLetter)">
-                    Deactivate
+                <ion-option-button class="button-positive" ng-click="remove(personalLetter)">
+                    Edit
                 </ion-option-button>
             </ion-item>
         </ion-list>
