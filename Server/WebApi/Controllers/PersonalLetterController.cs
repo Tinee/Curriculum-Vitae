@@ -36,6 +36,16 @@ namespace Server.Controllers
             return Ok(response);
         }
 
+        [Authorize]
+        [Route("api/personalLetter/GetByCompanyId/{companyId}")]
+        public IHttpActionResult Get(int companyId)
+        {
+            var response = _personalLetterHandler.Get(companyId);
+
+            if (response == null) return NotFound();
+            return Ok(response);
+        }
+        [Authorize]
         public void Post([FromBody]PersonalLetter personalLetter)
         {
             _personalLetterHandler.Post(personalLetter);

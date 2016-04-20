@@ -26,6 +26,12 @@ namespace Business_Logic.Database
             return companyId == null ? null :  _uow.PersonalLetterRepository.GetAll().FirstOrDefault(x => x.Company.Id == companyId).ToContract();
         }
 
+        public PersonalLetter Get(int companyId)
+        {
+          var personalLetter =  _uow.PersonalLetterRepository.Get(x => x.Company.Id == companyId).FirstOrDefault();
+            return personalLetter?.ToContract();
+        }
+
         public void Post(PersonalLetter personalLetter)
         {
             _uow.PersonalLetterRepository.CreateOrUpdate(personalLetter.ToDatabaseEntitie());
