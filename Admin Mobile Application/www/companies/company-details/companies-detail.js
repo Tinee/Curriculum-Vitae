@@ -5,21 +5,26 @@
       .module('app.companies')
       .controller('CompanyDetailController', CompanyDetailController);
 
-   CompanyDetailController.$inject = ['$stateParams'];
-   function CompanyDetailController($stateParams) {
+   CompanyDetailController.$inject = ['$stateParams', 'dataservice'];
+   function CompanyDetailController($stateParams, dataservice) {
       var vm = this;
 
 
+      vm.data = {};
+
       activate();
-      
+
 
       ////////////////
 
       function activate() {
-         var storageItem = JSON.parse(window.localStorage.getItem('personalLetters'));
-         var clickedObject = storageItem.personalLetters[$stateParams.id];
-         vm.data = clickedObject;
-         
+         vm.data = dataservice.personalLetterByCompanyId().get({ id: $stateParams.id },function(){},function(){
+            vm.data = {
+               Company: {
+                  Name: 'Not Found'
+               }
+            }
+         });
       }
    }
 })();

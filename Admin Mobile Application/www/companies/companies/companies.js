@@ -9,7 +9,7 @@
     function CompaniesController(dataservice, $scope, $ionicModal) {
         var vm = this;
 
-        vm.personalLetters = [];
+        vm.companies = [];
         vm.doRefresh = doRefresh;
         vm.triggerModal = triggerModal;
         $scope.closeModal = closeModal;
@@ -21,15 +21,15 @@
 
         function activate() {
 
-            var storageItem = JSON.parse(window.localStorage.getItem('personalLetters'));
+            var storageItem = JSON.parse(window.localStorage.getItem('companies'));
 
             if (storageItem) {
-                vm.personalLetters = storageItem.personalLetters;
+                vm.companies = storageItem.personalLetters;
             }
             else {
-                dataservice.personalLetters().query(function(response) {
-                    window.localStorage.setItem('personalLetters', angular.toJson({ personalLetters: response }));
-                    vm.personalLetters = response;
+                dataservice.companies().query(function(response) {
+                    window.localStorage.setItem('companies', angular.toJson({ personalLetters: response }));
+                    vm.companies = response;
                 });
             }
         }
@@ -44,11 +44,11 @@
                 $scope.modal = modal;
                 $scope.modal.show();
             });
-        };
+        }
 
         function closeModal() {
             $scope.modal.hide();
-        };
+        }
 
         function doRefresh() {
             var newData = dataservice.personalLetters().query(function(response) {
