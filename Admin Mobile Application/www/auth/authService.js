@@ -14,7 +14,7 @@
    function AuthService($location, $http, $q, $state) {
 
 
-      var serviceBase = 'http://marcuscarlssonapi.azurewebsites.net/';
+      var serviceBase = 'http://localhost:2911/';
       var authServiceFactory = {};
 
       var _authentication = {
