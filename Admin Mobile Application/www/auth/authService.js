@@ -10,10 +10,14 @@
 
 
         var serviceBase = 'http://marcuscarlssonapi.azurewebsites.net/';
-        var authServiceFactory = {};
+        var services = {
+            login: login
+        };
+
+        return services;
 
         // ---------------------------
-        var _login = function (loginData) {
+        function login(loginData) {
 
             var data = "grant_type=password&username=" + loginData.userName + "&password=" + loginData.password;
 
@@ -34,10 +38,5 @@
 
             return deferred.promise;
         };
-
-        authServiceFactory.login = _login;
-
-        return authServiceFactory;
-
     }
 })();
