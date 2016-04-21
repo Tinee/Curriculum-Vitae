@@ -34,3 +34,22 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataServ
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.NewDb20160404.resources
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.NewDbSecond20160406.resources
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.TableAdmin.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\DataService.dll.config
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\DataService.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\DataService.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\Database Entities.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\Database Entities.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.xml
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.First20160403.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.Second20160403.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.Third20160403.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.NewDb20160404.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.NewDbSecond20160406.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.TableAdmin.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.csproj.GenerateResource.Cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.pdb

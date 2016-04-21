@@ -10,3 +10,10 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Contracts\bin\Debug\Contracts.
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Contracts\bin\Debug\Contracts.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Contracts\bin\Debug\Enums.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Contracts\bin\Debug\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Contracts\bin\Debug\Contracts.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Contracts\bin\Debug\Contracts.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Contracts\bin\Debug\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Contracts\bin\Debug\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Contracts\obj\Debug\Contracts.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Contracts\obj\Debug\Contracts.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Contracts\obj\Debug\Contracts.pdb

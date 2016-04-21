@@ -20,3 +20,14 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\bin\Debug\Enums.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\bin\Debug\Contracts.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\bin\Debug\Database Entities.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\bin\Debug\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Mappers.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Mappers.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Contracts.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Database Entities.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Contracts.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Database Entities.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Debug\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\obj\Debug\Mappers.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\obj\Debug\Mappers.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\obj\Debug\Mappers.pdb

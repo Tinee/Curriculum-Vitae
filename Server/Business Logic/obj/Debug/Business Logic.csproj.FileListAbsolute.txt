@@ -36,3 +36,21 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\DataS
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\Mappers.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.xml
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Business Logic.dll.config
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Business Logic.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Business Logic.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Contracts.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Database Entities.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\DataService.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Mappers.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Contracts.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Database Entities.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\DataService.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\Mappers.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.xml
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Debug\Business Logic.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Debug\Business Logic.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Debug\Business Logic.pdb
