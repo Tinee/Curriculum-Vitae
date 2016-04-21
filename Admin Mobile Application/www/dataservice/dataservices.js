@@ -8,7 +8,7 @@
   Service.$inject = ['$resource'];
   function Service($resource) {
 
-    var base = 'http://localhost:2911/';
+    var base = 'http://marcuscarlssonapi.azurewebsites.net/';
 
     var services = {
       companies: companies,
@@ -26,11 +26,11 @@
     function personalLetters() {
       return $resource(base + 'api/personalletter/:id', { id: '@id' });
     }
-    
+
     function personalLetterByCompanyId() {
       return $resource(base + 'api/personalletter/GetByCompanyId/:id', { id: '@id' });
     }
-    
-    
+
+
   }
 })();

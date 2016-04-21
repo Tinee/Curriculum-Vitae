@@ -1,78 +1,43 @@
-
-
-
-
-
 (function () {
-   'use strict';
+    'use strict';
 
-   angular
-      .module('app.auth')
-      .factory('authService', AuthService);
+    angular
+        .module('app.auth')
+        .factory('authService', AuthService);
 
-   AuthService.$inject = ['$location', '$http', '$q', '$state'];
-   function AuthService($location, $http, $q, $state) {
-
-
-      var serviceBase = 'http://localhost:2911/';
-      var authServiceFactory = {};
-
-      var _authentication = {
-         isAuth: false,
-         user: {}
-      };
+    AuthService.$inject = ['$location', '$http', '$q', '$state'];
+    function AuthService($location, $http, $q, $state) {
 
 
-      var _login = function (loginData) {
+        var serviceBase = 'http://marcuscarlssonapi.azurewebsites.net/';
+        var authServiceFactory = {};
 
-         var data = "grant_type=password&username=" + loginData.userName + "&password=" + loginData.password;
+        // ---------------------------
+        var _login = function (loginData) {
 
-         var deferred = $q.defer();
+            var data = "grant_type=password&username=" + loginData.userName + "&password=" + loginData.password;
 
-         $http.post(serviceBase + 'token', data, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).success(function (response) {
+            var deferred = $q.defer();
 
-            window.localStorage.setItem('token', angular.toJson({ token: response.access_token }));
+            $http.post(serviceBase + 'token', data, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).success(function (response) {
 
-            _authentication.isAuth = true;
-               _authentication.userName = loginData.userName;
+                window.localStorage.setItem('token', angular.toJson({ token: response.access_token }));
 
-            $location.path('/tab/companies');
-            window.location.reload();
+                $location.path('/tab/companies');
+                window.location.reload();
 
-            deferred.resolve(response);
+                deferred.resolve(response);
 
-         }).error(function (err, status) {
-            deferred.reject(err);
-         });
+            }).error(function (err, status) {
+                deferred.reject(err);
+            });
 
-         return deferred.promise;
-      };
+            return deferred.promise;
+        };
 
-      var _logOut = function () {
+        authServiceFactory.login = _login;
 
-         localStorageService.remove('authUser');
+        return authServiceFactory;
 
-         _authentication.isAuth = false;
-         _authentication.userName = "";
-
-      };
-
-      var _fillAuthData = function () {
-
-         var authData = localStorageService.get('authorizationData');
-         if (authData) {
-            _authentication.isAuth = true;
-            _authentication.user = authData.user;
-         }
-
-      };
-
-      authServiceFactory.login = _login;
-
-      authServiceFactory.authentication = _authentication;
-
-      return authServiceFactory;
-
-
-   }
+    }
 })();

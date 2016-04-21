@@ -3,6 +3,7 @@
 
    angular.module('app', [
       'app.core',
+      
       'layout.module',
       'factories.module'
    ]).config([
