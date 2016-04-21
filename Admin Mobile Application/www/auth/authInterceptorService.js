@@ -1,47 +1,47 @@
-(function() {
-'use strict';
+(function () {
+    'use strict';
 
-   angular
-      .module('app.auth')
-      .factory('authInterceptorService', authInterceptorService);
+    angular
+        .module('app.auth')
+        .factory('authInterceptorService', authInterceptorService);
 
-   authInterceptorService.$inject = ['$q', '$location'];
-   function authInterceptorService($q, $location) {
-    
-      
-    var authInterceptorServiceFactory = {};
+    authInterceptorService.$inject = ['$q', '$location'];
+    function authInterceptorService($q, $location) {
 
-    var _request = function (config) {
 
-        config.headers = config.headers || {};
+        var authInterceptorServiceFactory = {
+            request: request,
+            responseError:responseError
+        };
 
-        var authData =JSON.parse(window.localStorage.getItem('token'));
-        if (authData) {
-            config.headers.Authorization = 'Bearer ' + authData.token;
-        }
-        else
-        {
-             if($location.path() !== '/tab/login')
-             {
-                 $location.path('/tab/login');
-                 window.location.reload();
-             }
+        function request(config) {
 
-        }
+            config.headers = config.headers || {};
 
-        return config;
-    };
+            var authData = JSON.parse(window.localStorage.getItem('token'));
+            if (authData) {
+                config.headers.Authorization = 'Bearer ' + authData.token;
+            }
+            else {
+                if ($location.path() !== '/tab/login') {
+                    $location.path('/tab/login');
+                    window.location.reload();
+                }
 
-    var _responseError = function (rejection) {
-        if (rejection.status === 401) {
-            $location.path('/login');
-        }
-        return $q.reject(rejection);
-    };
+            }
 
-    authInterceptorServiceFactory.request = _request;
-    authInterceptorServiceFactory.responseError = _responseError;
+            return config;
+        };
 
-    return authInterceptorServiceFactory;
-   }
+        function responseError(rejection) {
+            if (rejection.status === 401) {
+                $location.path('/login');
+            }
+            return $q.reject(rejection);
+        };
+
+
+
+        return authInterceptorServiceFactory;
+    }
 })();
