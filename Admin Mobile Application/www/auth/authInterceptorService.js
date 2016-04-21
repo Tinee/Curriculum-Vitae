@@ -9,10 +9,12 @@
     function authInterceptorService($q, $location) {
 
 
-        var authInterceptorServiceFactory = {
+        var services = {
             request: request,
             responseError:responseError
         };
+
+        return services;
 
         function request(config) {
 
@@ -40,8 +42,5 @@
             return $q.reject(rejection);
         };
 
-
-
-        return authInterceptorServiceFactory;
     }
 })();
