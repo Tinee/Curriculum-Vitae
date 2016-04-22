@@ -1,79 +1,91 @@
 
 angular.module('app', [
-   'app.core',
-   
-   'app.tabs',
-   'app.companies',
-   'app.account',
-   'app.login',
-   'app.auth'
-   ])
+  'app.core',
 
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-     
-    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
+  'app.tabs',
+  'app.companies',
+  'app.account',
+  'app.login',
+  'app.auth',
+  'app.letter'
+])
 
-    }
-    if (window.StatusBar) {
-       
-      StatusBar.styleDefault();
-    }
-  });
-})
+  .run(function ($ionicPlatform) {
+    $ionicPlatform.ready(function () {
 
-.config(function($stateProvider, $urlRouterProvider) {
+      if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        cordova.plugins.Keyboard.disableScroll(true);
 
-  $stateProvider
+      }
+      if (window.StatusBar) {
 
-    .state('tab', {
-    url: '/tab',
-    abstract: true,
-    templateUrl: 'tabs/tabs.html',
-    controller: 'TabsController as vm'
+        StatusBar.styleDefault();
+      }
+    });
   })
 
-  .state('tab.companies', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'companies/companies/companies.html',
-          controller: 'CompaniesController as vm'
-        }
-      }
-    })
-    
-    .state('tab.company-detail', {
-      url: '/chats/:id',
-      views: {
-        'tab-chats': {
-          templateUrl: 'companies/company-details/companies-detail.html',
-           controller: 'CompanyDetailController as vm'
-        }
-      }
-    })
-      . state('tab.login', {
-      url: '/login',
-      views: {
-        'tab-login': {
-          templateUrl: 'login/login.html',
-          controller: 'LoginController as vm'
-        }
-      }
+  .config(function ($stateProvider, $urlRouterProvider) {
+
+    $stateProvider
+
+      .state('tab', {
+        url: '/tab',
+        abstract: true,
+        templateUrl: 'tabs/tabs.html',
+        controller: 'TabsController as vm'
       })
 
-  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'account/account.html',
-        controller: 'AccountController as vm'
-      }
-    }
+      .state('tab.companies', {
+        url: '/companies',
+        views: {
+          'tab-companies': {
+            templateUrl: 'companies/companies/companies.html',
+            controller: 'CompaniesController as vm'
+          }
+        }
+      })
+
+      .state('tab.company-detail', {
+        url: '/companies/:id',
+        views: {
+          'tab-companies': {
+            templateUrl: 'companies/company-details/companies-detail.html',
+            controller: 'CompanyDetailController as vm'
+          }
+        }
+      })
+
+      .state('tab.login', {
+        url: '/login',
+        views: {
+          'tab-login': {
+            templateUrl: 'login/login.html',
+            controller: 'LoginController as vm'
+          }
+        }
+      })
+
+      .state('tab.account', {
+        url: '/account',
+        views: {
+          'tab-account': {
+            templateUrl: 'account/account.html',
+            controller: 'AccountController as vm'
+          }
+        }
+      })
+
+      .state('tab.edit-edit', {
+        url: '/edit/:id',
+        views: {
+          'tab-letter': {
+            templateUrl: 'letter/letter.html',
+            controller: 'LetterController as vm'
+          }
+        }
+      });
+
+    $urlRouterProvider.otherwise('/tab/companies');
+
   });
-
-  $urlRouterProvider.otherwise('/tab/chats');
-
-});
