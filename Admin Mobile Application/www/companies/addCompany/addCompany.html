@@ -4,17 +4,17 @@
     </ion-header-bar>
     <ion-content class="padding">
         <p style="text-align: center;">Please add the necessary information to create a company.</p>
-        <form role="form">
+        <form name="addCompanyForm" role="form">
             <ion-list>
                 <label class="item item-input" ion-item>
-                    <input type="text" placeholder="Company Name" />
+                    <input ng-model="newCompany.name" ng-required="true" type="text" placeholder="Company Name" />
                 </label>
                 <label class="item item-input" ion-item>
-                    <input type="text" placeholder="Website" />
+                    <input ng-model="newCompany.website" ng-required="true" type="text" placeholder="Website" />
                 </label>
             </ion-list>
+            <button ng-disabled="addCompanyForm.$invalid" ng-click="addCompany()" class="button button-block button-positive">Save</button>
+            <button ng-click="closeModal()" class="button button-block button-assertive">Cancel</button>
         </form>
-        <button ng-click="" class="button button-block button-positive">Save</button>
-        <button ng-click="closeModal()" class="button button-block button-assertive">Cancel</button>
     </ion-content>
 </ion-modal-view>

@@ -30,7 +30,5 @@
     function personalLetterByCompanyId() {
       return $resource(base + 'api/personalletter/GetByCompanyId/:id', { id: '@id' });
     }
-
-
   }
 })();

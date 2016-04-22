@@ -37,6 +37,6 @@
             });
 
             return deferred.promise;
-        };
+        }
     }
 })();

@@ -6,7 +6,7 @@
     </ion-nav-title>
     <ion-nav-buttons side="right">
         <button class="button" ng-click="vm.triggerModal()">
-            <h3>+</h3>
+            <h3 style="color:white;">+</h3>
         </button>
     </ion-nav-buttons>
     <ion-content>
@@ -14,10 +14,13 @@
         </ion-refresher>
         <ion-list>
             <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="company in vm.companies" type="item-text-wrap"
-            href="#/tab/chats/{{company.Id}}">
+                href="#/tab/chats/{{company.Id}}">
                 <h3>{{company.Name}}</h3>
                 <i class="icon ion-chevron-right icon-accessory"></i>
-                <ion-option-button class="button-positive" ng-click="remove(personalLetter)">
+                <ion-option-button class="button-assertive" ng-click="vm.removeCompany(company.Id)">
+                    Delete
+                </ion-option-button>
+                <ion-option-button class="button-positive" ng-click="">
                     Edit
                 </ion-option-button>
             </ion-item>
