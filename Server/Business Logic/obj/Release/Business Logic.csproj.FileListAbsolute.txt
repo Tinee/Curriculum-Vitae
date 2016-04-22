@@ -16,3 +16,21 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\bin\Release\Ent
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Business Logic.dll.config
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Business Logic.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Business Logic.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Contracts.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Database Entities.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\DataService.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\EntityFramework.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Mappers.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Contracts.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Database Entities.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\DataService.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Mappers.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\EntityFramework.xml
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.pdb

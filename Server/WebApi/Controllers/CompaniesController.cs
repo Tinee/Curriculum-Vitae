@@ -34,5 +34,11 @@ namespace Server.Controllers
             _companyHandler.Post(company);
             return Ok();
         }
+
+        public IHttpActionResult Delete(int id)
+        {
+            _companyHandler.Delete(id);
+            return Ok();
+        }
     }
 }

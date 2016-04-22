@@ -9,3 +9,14 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\bin\Release\Enums.pdb
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\obj\Release\Mappers.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\obj\Release\Mappers.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Mappers\obj\Release\Mappers.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Mappers.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Mappers.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Contracts.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Database Entities.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Contracts.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Database Entities.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\bin\Release\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\obj\Release\Mappers.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\obj\Release\Mappers.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Mappers\obj\Release\Mappers.pdb

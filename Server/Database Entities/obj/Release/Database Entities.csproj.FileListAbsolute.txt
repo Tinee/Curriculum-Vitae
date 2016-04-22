@@ -5,3 +5,10 @@ C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Database Entities\bin\Release\
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Database Entities\obj\Release\Database Entities.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Database Entities\obj\Release\Database Entities.dll
 C:\Users\Marcus\Documents\Curriculum-Vitae\Server\Database Entities\obj\Release\Database Entities.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Database Entities\bin\Release\Database Entities.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Database Entities\bin\Release\Database Entities.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Database Entities\bin\Release\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Database Entities\bin\Release\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Database Entities\obj\Release\Database Entities.csprojResolveAssemblyReference.cache
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Database Entities\obj\Release\Database Entities.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Database Entities\obj\Release\Database Entities.pdb
