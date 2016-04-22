@@ -5,7 +5,7 @@
         "name": "Launch",
         "type": "chrome",
         "request": "launch",
-        "url": "http://localhost:8100/",//Change to whatever you homepage is
+        "url": "http://192.168.2.192:8100/",//Change to whatever you homepage is
         "runtimeArgs": [
             "--new-window", //Open in new window
             "--user-data-dir=C:/dev/", //Can be any directory. Makes chrome load in a different directory so that it opens in a new instance.
