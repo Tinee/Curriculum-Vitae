@@ -1,30 +1,29 @@
 (function () {
-   'use strict';
+    'use strict';
 
-   angular
-      .module('app.companies')
-      .controller('CompanyDetailController', CompanyDetailController);
+    angular
+        .module('app.companies')
+        .controller('CompanyDetailController', CompanyDetailController);
 
-   CompanyDetailController.$inject = ['$stateParams', 'dataservice'];
-   function CompanyDetailController($stateParams, dataservice) {
-      var vm = this;
-
-
-      vm.data = {};
-
-      activate();
+    CompanyDetailController.$inject = ['$stateParams', 'dataservice'];
+    function CompanyDetailController($stateParams, dataservice) {
+        var vm = this;
 
 
-      ////////////////
+        vm.data = {};
+        vm.companyNotFound = false;
 
-      function activate() {
-         vm.data = dataservice.personalLetterByCompanyId().get({ id: $stateParams.id },function(){},function(){
-            vm.data = {
-               Company: {
-                  Name: 'Not Found'
-               }
-            }
-         });
-      }
-   }
+        activate();
+
+
+        ////////////////
+
+        function activate() {
+            dataservice.personalLetterByCompanyId().get({ id: $stateParams.id }, function (response) {
+                vm.data = response;
+            }, function () {
+                vm.companyNotFound = true;
+            });
+        }
+    }
 })();

@@ -13,8 +13,8 @@
         <ion-refresher pulling-text="Pull to refresh..." on-refresh="vm.doRefresh()">
         </ion-refresher>
         <ion-list>
-            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="company in vm.companies" type="item-text-wrap"
-                href="#/tab/chats/{{company.Id}}">
+            <ion-item class="item-remove-animate item item-icon-right" ng-repeat="company in vm.companies" type="item-text-wrap"
+                href="#/tab/companies/{{company.Id}}">
                 <h3>{{company.Name}}</h3>
                 <i class="icon ion-chevron-right icon-accessory"></i>
                 <ion-option-button class="button-assertive" ng-click="vm.removeCompany(company.Id)">
