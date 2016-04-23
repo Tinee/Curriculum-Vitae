@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app.services', [])
+    .module('app.dataservice')
     .factory('dataservice', Service);
 
   Service.$inject = ['$resource'];
