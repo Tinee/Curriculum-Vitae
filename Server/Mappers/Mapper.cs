@@ -28,10 +28,9 @@ namespace Mappers
             var listUsers = personalLetters.ToList();
             return listUsers.ConvertAll(x => new PersonalLetter
             {
-               Id = x.Id,
-               Active = x.Active,
-               Company = x.Company.ToContract(),
-               Description = x.Description,
+                Id = x.Id,
+                Company = x.Company.ToContract(),
+                Description = x.Description,
                 DownloadCount = x.DownloadCount,
             });
         }
@@ -46,6 +45,18 @@ namespace Mappers
                 Firstname = x.Firstname,
                 Lastname = x.Lastname,
                 Password = x.Password
+            });
+        }
+
+        public static List<Technician> ToContracts(this IEnumerable<Database_Entities.Technician> technicians)
+        {
+            var listUsers = technicians.ToList();
+            return listUsers.ConvertAll(x => new Technician
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Percentage = x.Percentage,
+                Type = x.Type
             });
         }
 
@@ -71,7 +82,6 @@ namespace Mappers
         {
             return new PersonalLetter
             {
-                Active = personalLetter.Active,
                 Company = personalLetter.Company.ToContract(),
                 Description = personalLetter.Description,
                 Id = personalLetter.Id,
@@ -88,6 +98,17 @@ namespace Mappers
                 Id = admin.Id,
                 Lastname = admin.Lastname,
                 Password = admin.Password
+            };
+        }
+
+        public static Technician ToContract(this Database_Entities.Technician technician)
+        {
+            return new Technician
+            {
+                Id = technician.Id,
+                Name = technician.Name,
+                Percentage = technician.Percentage,
+                Type = technician.Type
             };
         }
 
@@ -119,11 +140,22 @@ namespace Mappers
             var listLetters = personalLetters.ToList();
             return listLetters.ConvertAll(x => new Database_Entities.PersonalLetter
             {
-                Active = x.Active,
                 Company = x.Company.ToDatabaseEntitie(),
                 Description = x.Description,
                 Id = x.Id,
                 DownloadCount = x.DownloadCount,
+            });
+        }
+
+        public static List<Database_Entities.Technician> ToDatabaseEntities(this IEnumerable<Technician> technicians)
+        {
+            var listLetters = technicians.ToList();
+            return listLetters.ConvertAll(x => new Database_Entities.Technician
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Percentage = x.Percentage,
+                Type = x.Type
             });
         }
 
@@ -147,7 +179,6 @@ namespace Mappers
         {
             return new Database_Entities.PersonalLetter
             {
-                Active = personalLetter.Active,
                 Company = personalLetter.Company.ToDatabaseEntitie(),
                 Description = personalLetter.Description,
                 Id = personalLetter.Id,
@@ -164,6 +195,17 @@ namespace Mappers
                 Id = admin.Id,
                 Lastname = admin.Lastname,
                 Password = admin.Password
+            };
+        }
+
+        public static Database_Entities.Technician ToDatabaseEntitie(this Technician technician)
+        {
+            return new Database_Entities.Technician
+            {
+                Id = technician.Id,
+                Name = technician.Name,
+                Percentage = technician.Percentage,
+                Type = technician.Type
             };
         }
 

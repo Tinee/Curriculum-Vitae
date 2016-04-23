@@ -352,3 +352,5 @@ C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\WebApi\bin\System.Web.Http.Owin.
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\WebApi\obj\Debug\Api.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\WebApi\obj\Debug\Server.dll
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\WebApi\obj\Debug\Server.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\WebApi\bin\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\WebApi\bin\Enums.pdb

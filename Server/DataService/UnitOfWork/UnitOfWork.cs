@@ -1,7 +1,7 @@
 ﻿using Database_Entities;
 using DataService.Repository;
 
-namespace DataLayer.Logic.Database.UnitOfWork
+namespace DataService.UnitOfWork
 {
     public class UnitOfWork
     {
@@ -10,9 +10,23 @@ namespace DataLayer.Logic.Database.UnitOfWork
         private GenericRepository<Company> _companyRepository;
         private GenericRepository<PersonalLetter> _personalLetter;
         private GenericRepository<Admin> _adminsRepository;
+        private GenericRepository<Technician> _technicianRepository;
+
         public UnitOfWork(object db)
         {
             _db = db;
+        }
+
+        public GenericRepository<Technician> TechnicianRepository
+        {
+            get
+            {
+                if (_technicianRepository == null)
+                {
+                    _technicianRepository = new GenericRepository<Technician>(_db);
+                }
+                return _technicianRepository;
+            }
         }
 
         public GenericRepository<Company> CompanyRepository

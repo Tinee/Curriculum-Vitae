@@ -13,7 +13,7 @@ namespace Server
     {
         public static OAuthAuthorizationServerOptions OAuthOptions { get; private set; }
 
-        public static string PublicClientId { get; private set; }      
+        public static string PublicClientId { get; private set; }
         public void ConfigureAuth(IAppBuilder app)
         {
 
@@ -30,7 +30,6 @@ namespace Server
                 Provider = new ApplicationOAuthProvider(PublicClientId),
                 AuthorizeEndpointPath = new PathString("/api/Account/ExternalLogin"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(360),
-                // In production mode set AllowInsecureHttp = false
                 AllowInsecureHttp = true
             };
 

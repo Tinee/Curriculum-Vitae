@@ -53,3 +53,8 @@ C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataServic
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.csproj.GenerateResource.Cache
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.dll
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.TableTechnician.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.RemovedActiveColumn.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Debug\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Debug\DataService.Migrations.InsertColumnTypeInTechnicians.resources

@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Contracts;
-using DataLayer.Logic.Database.UnitOfWork;
 using DataService;
+using DataService.UnitOfWork;
 using Mappers;
 
 namespace Business_Logic.Database
 {
-    public class PersonalLettersHandler
+    public class PersonalLetterHandler
     {
         private UnitOfWork _uow;
-        public PersonalLettersHandler(object dataContext)
+        public PersonalLetterHandler(object dataContext)
         {
             _uow = new UnitOfWork((DataContext)dataContext);
         }
@@ -23,25 +23,23 @@ namespace Business_Logic.Database
         public PersonalLetter Get(string companyPassword)
         {
             var companyId = _uow.CompanyRepository.Get(x => x.Password == companyPassword).FirstOrDefault()?.Id;
-            return companyId == null ? null :  _uow.PersonalLetterRepository.GetAll().FirstOrDefault(x => x.Company.Id == companyId).ToContract();
+            return companyId == null ? null : _uow.PersonalLetterRepository.GetAll().FirstOrDefault(x => x.Company.Id == companyId).ToContract();
         }
 
         public PersonalLetter Get(int companyId)
         {
-          var personalLetter =  _uow.PersonalLetterRepository.Get(x => x.Company.Id == companyId).FirstOrDefault();
+            var personalLetter = _uow.PersonalLetterRepository.Get(x => x.Company.Id == companyId).FirstOrDefault();
             return personalLetter?.ToContract();
         }
 
-        public void Post(PersonalLetter personalLetter)
+        public void Post(PersonalLetter technician)
         {
-            _uow.PersonalLetterRepository.CreateOrUpdate(personalLetter.ToDatabaseEntitie());
+            _uow.PersonalLetterRepository.CreateOrUpdate(technician.ToDatabaseEntitie());
         }
 
         public void Delete(int id)
         {
-            var personalLetter = _uow.PersonalLetterRepository.Get(id);
-            personalLetter.Active = false;
-            _uow.PersonalLetterRepository.CreateOrUpdate(personalLetter);
+            _uow.PersonalLetterRepository.Delete(id);
         }
     }
 }

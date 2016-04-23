@@ -14,7 +14,5 @@ namespace Database_Entities
         public virtual Company Company { get; set; }
         [Required]
         public int DownloadCount { get; set; }
-        [Required]
-        public bool Active { get; set; }
     }
 }

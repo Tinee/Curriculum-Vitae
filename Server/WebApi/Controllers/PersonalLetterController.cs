@@ -9,11 +9,11 @@ namespace Server.Controllers
     
     public class PersonalLetterController : ApiController
     {
-        private PersonalLettersHandler _personalLetterHandler;
+        private PersonalLetterHandler _personalLetterHandler;
 
         public PersonalLetterController()
         {
-            _personalLetterHandler = new PersonalLettersHandler(new DataContext());
+            _personalLetterHandler = new PersonalLetterHandler(new DataContext());
         }
 
         [Authorize]

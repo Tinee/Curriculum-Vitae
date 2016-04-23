@@ -14,5 +14,7 @@ namespace DataService
         public DbSet<Company> Companies { get; set; }
         public DbSet<PersonalLetter> PersonalLetters { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<Technician> Technicians { get; set; }
+
     }
 }

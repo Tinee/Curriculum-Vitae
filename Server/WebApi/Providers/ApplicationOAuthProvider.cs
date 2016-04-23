@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using Business_Logic.Account;
 using Business_Logic.Database;
 using Contracts;
-using DataLayer.Logic.Database.UnitOfWork;
 using DataService;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;

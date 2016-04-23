@@ -53,6 +53,7 @@
     <Compile Include="Account\PasswordHandler.cs" />
     <Compile Include="Database\AdminHandler.cs" />
     <Compile Include="Database\CompanyHandler.cs" />
+    <Compile Include="Database\TechnicianHandler.cs" />
     <Compile Include="Database\PersonalLettersHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

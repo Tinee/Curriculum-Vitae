@@ -36,3 +36,5 @@ C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataServ
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.csproj.GenerateResource.Cache
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.dll
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.TableTechnician.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.RemovedActiveColumn.resources

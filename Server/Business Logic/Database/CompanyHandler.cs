@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Business_Logic.Account;
 using Contracts;
-using DataLayer.Logic.Database.UnitOfWork;
 using DataService;
+using DataService.UnitOfWork;
 using Mappers;
 
 namespace Business_Logic.Database
