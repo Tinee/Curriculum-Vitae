@@ -38,3 +38,6 @@ C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataServ
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.pdb
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.TableTechnician.resources
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.RemovedActiveColumn.resources
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Release\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\bin\Release\Enums.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\DataService\obj\Release\DataService.Migrations.InsertColumnTypeInTechnicians.resources

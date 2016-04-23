@@ -34,3 +34,5 @@ C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Entit
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.csprojResolveAssemblyReference.cache
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.dll
 C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\obj\Release\Business Logic.pdb
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Enums.dll
+C:\Users\Marcus\Desktop\Curriculum-Vitae\Server\Business Logic\bin\Release\Enums.pdb
