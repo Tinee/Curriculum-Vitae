@@ -6,8 +6,7 @@ angular.module('app', [
   'app.companies',
   'app.account',
   'app.login',
-  'app.auth',
-  'app.letter'
+  'app.auth'
 ])
 
   .run(function ($ionicPlatform) {
@@ -72,16 +71,6 @@ angular.module('app', [
           'tab-account': {
             templateUrl: 'account/account.html',
             controller: 'AccountController as vm'
-          }
-        }
-      })
-
-      .state('tab.edit-edit', {
-        url: '/edit/:id',
-        views: {
-          'tab-letter': {
-            templateUrl: 'letter/letter.html',
-            controller: 'LetterController as vm'
           }
         }
       });

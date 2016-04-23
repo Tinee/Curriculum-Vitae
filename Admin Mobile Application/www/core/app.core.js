@@ -4,7 +4,7 @@
    angular.module('app.core', [
       'ionic',
      
-      'app.services',
+      'app.dataservice',
       'ngResource'
    ]);
 })();
