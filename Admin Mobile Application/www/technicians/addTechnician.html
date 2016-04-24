@@ -1,0 +1,34 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Add Technician</h1>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <p style="text-align: center;">Please add the necessary information to create a technician.</p>
+        <form name="addTechnicianForm" role="form">
+            <ion-list>
+                <label class="item item-input" ion-item>
+                    <input ng-model="newTechnician.name" ng-required="true" type="text" placeholder="Name" />
+                </label>
+
+                <label class="item item-input item-select">
+              <div class="input-label">
+                    Type
+              </div>
+           <select  ng-model="newTechnician.type">
+              <option value="1" >Technician</option>
+              <option value="2" >Javascript Framework</option>
+              <option value="3" >Devlopement Enviroment</option>
+           </select>
+       </label>
+                <label class="item ">
+                 <div class="item-content">{{newTechnician.percentage}}%</div>
+                  <div class="range range-positive">
+                 <input ng-model="newTechnician.percentage" ng-change="changePercentageContent()"  type="range" name="volume" min="0" max="100" value="14"  >
+    </div>
+</label>
+            </ion-list>
+            <button ng-disabled="addTechnicianForm.$invalid || newTechnician.type == 0 " ng-click="addTechnician()" class="button button-block button-positive">Save</button>
+            <button ng-click="closeModal()" class="button button-block button-assertive">Cancel</button>
+        </form>
+    </ion-content>
+</ion-modal-view>
