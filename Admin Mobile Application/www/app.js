@@ -6,7 +6,9 @@ angular.module('app', [
   'app.companies',
   'app.account',
   'app.login',
-  'app.auth'
+  'app.auth',
+  'app.technicians',
+  'app.factories'
 ])
 
   .run(function ($ionicPlatform) {
@@ -44,6 +46,17 @@ angular.module('app', [
           }
         }
       })
+      
+      .state('tab.technicians', {
+        url: '/technicians',
+        views: {
+          'tab-technicians': {
+            templateUrl: 'technicians/technicians.html',
+            controller: 'TechniciansController as vm'
+          }
+        }
+      })
+
 
       .state('tab.company-detail', {
         url: '/companies/:id',
