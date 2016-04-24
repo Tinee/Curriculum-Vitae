@@ -13,7 +13,8 @@
     var services = {
       companies: companies,
       personalLetters: personalLetters,
-      personalLetterByCompanyId: personalLetterByCompanyId
+      personalLetterByCompanyId: personalLetterByCompanyId,
+      technicians: technicians
     };
 
     return services;
@@ -21,6 +22,10 @@
     ////////////////
     function companies() {
       return $resource(base + 'api/companies/:id', { id: '@id' });
+    }
+
+    function technicians() {
+      return $resource(base + 'api/technician/:id', { id: '@id' });
     }
 
     function personalLetters() {
