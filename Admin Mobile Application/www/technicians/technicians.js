@@ -58,10 +58,9 @@
             });
         }
 
-
         function triggerModal() {
 
-            $ionicModal.fromTemplateUrl('./technicians/addTechnician.html', {
+            $ionicModal.fromTemplateUrl('./technicians/addTechnician/addTechnician.html', {
                 scope: $scope,
                 animation: 'slide-in-up',
                 hardwareBackButtonClose: false

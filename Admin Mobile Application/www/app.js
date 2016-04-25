@@ -57,13 +57,22 @@ angular.module('app', [
         }
       })
 
-
       .state('tab.company-detail', {
         url: '/companies/:id',
         views: {
           'tab-companies': {
             templateUrl: 'companies/company-details/companies-detail.html',
             controller: 'CompanyDetailController as vm'
+          }
+        }
+      })
+      
+       .state('tab.technicians-detail', {
+        url: '/technicians/:id',
+        views: {
+          'tab-technicians': {
+            templateUrl: './technicians/editTechnician/edit-technician.html',
+            controller: 'EditTechnicianController as vm'
           }
         }
       })
