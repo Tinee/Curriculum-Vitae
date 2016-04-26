@@ -1,81 +1,78 @@
 <div class="sidebar-wrapper">
-   <div class="profile-container">
-      <h1 style="font-size:23px" class="name">Marcus Carlsson</h1>
-      <h3 class="tagline">Utvecklare</h3>
-   </div>
-   <div class="contact-container container-block">
-      <ul class="list-unstyled contact-list">
-         <li class="email"><i class="fa fa-envelope"></i>Developer@marcuscarlsson.nu</li>
-         <li class="phone"><i class="fa fa-phone"></i>076-3074962</li>
-         <!--<li class="website"><i class="fa fa-globe"></i><a href="MarcusCarlsson.nu" target="_blank">portfoliosite.com</a></li>-->
-         <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/marcus-carlsson-0078a810a" target="_blank">linkedin.com/in/Marcus</a></li>
-         <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Tinee" target="_blank">github.com/Tinee</a></li>
-         <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/MarcusCaerlsson" target="_blank">@MarcusCaerlsson</a></li>
-      </ul>
-   </div>
-   <div class="education-container container-block">
-      <h2 class="container-block-title">Utbildning</h2>
-      <div class="item">
-         <h4 class="degree">El Och Energi</h4>
-         <h5 class="meta">Lindeskolan</h5>
-         <div class="time">2009 - 2012</div>
+      <div class="profile-container">
+            <h1 style="font-size:23px" class="name">Marcus Carlsson</h1>
+            <h3 class="tagline">Utvecklare</h3>
       </div>
-      <div class="item">
-         <h4 class="degree">Microsoft .NET Developer – Cloud Computing</h4>
-         <h5 class="meta">Hermods Ecutbildningar</h5>
-         <div class="time">2014 - 2016</div>
+      <div class="contact-container container-block">
+            <ul class="list-unstyled contact-list">
+                  <li class="email"><i class="fa fa-envelope"></i>Developer@marcuscarlsson.nu</li>
+                  <li class="phone"><i class="fa fa-phone"></i>076-3074962</li>
+                  <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/marcus-carlsson-0078a810a" target="_blank">linkedin.com/in/Marcus</a></li>
+                  <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Tinee" target="_blank">github.com/Tinee</a></li>
+                  <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/MarcusCaerlsson" target="_blank">@MarcusCaerlsson</a></li>
+            </ul>
       </div>
-   </div>
-   <div class="languages-container container-block">
-      <h2 class="container-block-title">Språk</h2>
-      <ul class="list-unstyled interests-list">
-         <li>Svenska <span class="lang-desc">(Förstaspråk)</span></li>
-         <li>Engelska <span class="lang-desc">(Flytande)</span></li>
-      </ul>
-   </div>
-   <div class="interests-container container-block">
-      <h2 class="container-block-title">Intressen</h2>
-      <ul class="list-unstyled interests-list">
-         <li>Programmering</li>
-         <li>Ny Teknik</li>
-         <li>Umgänge</li>
-         <li>Hockey</li>
-         <li>Fotboll</li>
-      </ul>
-   </div>
-   <div class="interests-container container-block">
-      <h2 class="container-block-title">Referenser</h2>
-      <ul class="list-unstyled interests-list">
-         Skickar vid begäran.
-      </ul>
-   </div>
-   <div ng-hide="vm.foundLetter" class="interests-container container-block">
-      <h2 class="container-block-title">Personligt Brev</h2>
-      <ul class="list-unstyled interests-list">
-         <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.openModal()">här</a> för att skriva in en företagsnyckel.
-         </p>
-      </ul>
-   </div>
-   <div ng-hide="!vm.foundLetter" class="interests-container container-block">
-      <h2 class="container-block-title">Gästläge</h2>
-      <ul class="list-unstyled interests-list">
-         <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.removeLocalStorageItem('personalLetter')">här</a>            för att gå tillbaka till gästläge.
-         </p>
-      </ul>
-   </div>
+      <div class="education-container container-block">
+            <h2 class="container-block-title">Utbildning</h2>
+            <div class="item">
+                  <h4 class="degree">El Och Energi</h4>
+                  <h5 class="meta">Lindeskolan</h5>
+                  <div class="time">2009 - 2012</div>
+            </div>
+            <div class="item">
+                  <h4 class="degree">Microsoft .NET Developer – Cloud Computing</h4>
+                  <h5 class="meta">Hermods Ec-utbildningar</h5>
+                  <div class="time">2014 - 2016</div>
+            </div>
+      </div>
+      <div class="languages-container container-block">
+            <h2 class="container-block-title">Språk</h2>
+            <ul class="list-unstyled interests-list">
+                  <li>Svenska <span class="lang-desc">(Förstaspråk)</span></li>
+                  <li>Engelska <span class="lang-desc">(Flytande)</span></li>
+            </ul>
+      </div>
+      <div class="interests-container container-block">
+            <h2 class="container-block-title">Intressen</h2>
+            <ul class="list-unstyled interests-list">
+                  <li>Programmering</li>
+                  <li>Nya tekniker</li>
+                  <li>Umgänge</li>
+                  <li>Hockey</li>
+                  <li>Fotboll</li>
+            </ul>
+      </div>
+      <div class="interests-container container-block">
+            <h2 class="container-block-title">Referenser</h2>
+            <ul class="list-unstyled interests-list">
+                  Skickas vid begäran.
+            </ul>
+      </div>
+      <div ng-hide="vm.foundLetter" class="interests-container container-block">
+            <h2 class="container-block-title">Personligt Brev</h2>
+            <ul class="list-unstyled interests-list">
+                  <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.openModal()">här</a> för att skriva in en
+                        företagsnyckel.
+                  </p>
+            </ul>
+      </div>
+      <div ng-hide="!vm.foundLetter" class="interests-container container-block">
+            <h2 class="container-block-title">Gästläge</h2>
+            <ul class="list-unstyled interests-list">
+                  <p>Klicka <a style="cursor:pointer; font-size:17px" ng-click="vm.removeLocalStorageItem('personalLetter')">här</a>                        för att gå tillbaka till gästläge.
+                  </p>
+            </ul>
+      </div>
 </div>
-
 <div class="modal fade" id="myModal" role="dialog">
-   <div class="modal-dialog">
+      <div class="modal-dialog">
 
-      <!-- Modal -->
-      <section>
-         <div class="modal-content">
-            <div style="background-color:#42A8C0;" class="modal-header" style="padding:35px 50px;">
-               <center>
-                  <h3 style="color:white;font-family:Roboto">Hämta Personligt Brev</h4>
+            <section>
+                  <div class="modal-content">
+                        <div style="background-color:#42A8C0;" class="modal-header" style="padding:35px 50px;">
+                              <center>
+                                    <h3 style="color:white;font-family:Roboto">Hämta Personligt Brev</h4>
             <center/>
-               
               <span style="color:white;font-family:Roboto;font-size:16px"> Har du en företagsnyckel och vill komma åt erat personliga brev?</span>
             </div>
             <center>
@@ -96,300 +93,140 @@
 </div>
 </center>
 </section>
+
 <div class="main-wrapper">
    <section class="section summary-section">
       <h2 class="section-title"><i class="fa fa-user"></i>Om mig</h2>
       <div class="summary">
          <span>Idag läser jag till Microsoft .NET – Cloud Computing Utvecklare på EC-Utbildning i Örebro.</span>
          <br>
-     
-         <span>Jag är väldigt social och kommer alltid överens med människor runt omkring mig. Jag bor just nu i Örebro men kan tänka mig att flytta. </span>
+         <span>Jag är väldigt social och kommer alltid överens med människor runt omkring mig. Jag bor just nu i Örebro men kan tänka mig att flytta om det skulle behövas. </span>
          <br>
          <br>
          <span>Under min utbildning som .NET utvecklare har jag alltid försökt mig på nya tekniker och språk för att bli en så mångsidig utvecklare som jag bara kan bli.</span>
          <br>
          <br>
-         <span>Mitt mål som  utvecklare är att bli en så kallad fullstack utvecklare, jag föredrar att inte vara inriktad till ett specifikt område såsom frontend eller backend, utan kunna alla väsentliga bitar för ta en idé till en distribuerad produkt. </span>
+         <span>Mitt mål som  utvecklare är att bli en så kallad fullstack utvecklare, jag föredrar att inte vara inriktad till ett specifikt område så som frontend eller backend, utan att kunna alla väsentliga bitar för ta en idé till en distribuerad produkt. </span>
          <br>
          <span>Vad jag söker hos min arbetsgivare är ett företag där jag får ta mycket eget ansvar och möjligheten till att vidareutveckla mina kunskaper. </span>
       </div>
    </section>
-  
+
    <section class="section experiences-section">
       <h2 class="section-title"><i class="fa fa-briefcase"></i>Erfarenheter</h2>
       <div class="item">
          <div class="meta">
             <div class="upper-row">
                <h3 class="job-title">Säljare</h3>
-                  <div class="time">2012 - 2013</div>
-            </div>
-            <div class="company">Reffekt AB</div>
-         </div>
-         <div class="details">
-            <span>På Reffekt arbetade jag som telefon försäljare en längre tid och fick lära mig mycket om sälj och att prata med alla sorters typer av
+                                    <div class="time">2012 - 2013</div>
+                        </div>
+                        <div class="company">Reffekt AB</div>
+                  </div>
+                  <div class="details">
+                        <span>På Reffekt arbetade jag som telefon försäljare en längre tid och fick lära mig mycket om sälj och att prata med alla sorters typer av
                      människor och anpassa mig till den jag pratade med.</span>
-            <br>
-            <span> Detta har för mig varit givande vid
+                        <br>
+                        <span> Detta har för mig varit givande vid
                      många tillfällen i min vardag.  </span>
-         </div>
-   </div>
-   <div class="item">
-      <div class="meta">
-         <div class="upper-row">
-            <h3 class="job-title">Elektriker</h3>
-            <div class="time">2013 - 2014</div>
-         </div>
-         <div class="company">Stigebäck Larssons El</div>
-      </div>
-      <div class="details">
-         <span>Jobbade sex månader som installations elektriker, där jag fick göra mindre uppgifter eftersom jag var lärling.
-                        Avslutade karriären eftersom jag skulle börja studera .NET utveckling.</span>
-      </div>
-   </div>
-   </section>
-   <section class="section projects-section">
-      <h2 class="section-title"><i class="fa fa-university"></i>Praktiker</h2>
-      <div class="intro">
+                  </div>
       </div>
       <div class="item">
-         <span class="project-title"><a target="_blank" href="http://www.sogeti.se/">Sogeti</a></span> -
-         <span class="project-tagline">Fick uppdraget att skapa ett boknings system för kunder åt en frisör, dock var detta inte ett skarpt
+            <div class="meta">
+                  <div class="upper-row">
+                        <h3 class="job-title">Elektriker</h3>
+                        <div class="time">2013 - 2014</div>
+                  </div>
+                  <div class="company">Stigebäck Larssons El</div>
+            </div>
+            <div class="details">
+                  <span>Jobbade sex månader som installations elektriker, där jag fick göra mindre uppgifter eftersom jag var lärling.
+                        Avslutade karriären eftersom jag skulle börja studera .NET utveckling.</span>
+            </div>
+      </div>
+      </section>
+
+      <section class="section projects-section">
+            <h2 class="section-title"><i class="fa fa-university"></i>Praktiker</h2>
+            <div class="intro">
+            </div>
+            <div class="item">
+                  <span class="project-title"><a target="_blank" href="http://www.sogeti.se/">Sogeti</a></span> -
+                  <span class="project-tagline">Fick uppdraget att skapa ett boknings system för kunder åt en frisör, dock var detta inte ett skarpt
                         projekt som skulle gå emot någon kund utan mer för att vi skulle lära oss om bra tekniker som används
                         ofta i dagens projekt. Se projektet under "Barbershop". </span>
+            </div>
+            <div class="item">
+                  <span class="project-title"><a target="_blank" href="http://www.itmastaren.se">It-Mästaren</a></span> -
+                  <span class="project-tagline">Fick uppdraget att bygga ett mer användarvänligt sätt för dom på It-mästaren att stämpla sin tid. Dom hade
+                  ett system innan som bjöd in många misstag och därför blev data felaktig i databasen. Se projektet under
+                  "Instämplingssystem".</span>
+            </div>
+      </section>
+
+      <section class="section projects-section">
+            <h2 class="section-title"><i class="fa fa-archive"></i>Projekt</h2>
+            <div class="intro">
+            </div>
+            <div class="item">
+                  <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Barbershop">Bokningssystem För Frisörer</a></span>                  - <span class="project-tagline">System för att kunder ska kunna boka tid hos en frisör online. Det bästa med det här projektet att jag fick använda mig utav nya tekniker och principer som ligger bakom när det kommer till server sidan av programmering. </span>
+            </div>
+            <div class="item">
+                  <span class="project-title"><a target="_blank" href="https://github.com/Tinee/NemoClient">Instämplingssystem</a></span>                  - <span class="project-tagline">Redan från start hade jag en stark plan att jag ville bredda mina kunskaper inom frontend, så jag försökte lära mig allt om hur man ska bära sig åt för att vara en stark frontend utvecklare. </span>
+            </div>
+            <div class="item">
+                  <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Curriculum-Vitae/tree/master/Admin%20Mobile%20Application">Admin Mobil App</a></span>                  - <span class="project-tagline">Detta projekt är inte klar än, men tanken är att jag ska  ha en
+            admin app till min telefon så jag kan sköta om innehållet på min cv hemsida. Det är också för att få bättre förståelse för Ionic som är en häftig teknik som tillåter mig att göra hybrid appar med html/css och javascript.</span>
+            </div>
+            <div class="item">
+                  <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Curriculum-Vitae">Mitt Cv</a></span>                  - <span class="project-tagline">Hemsidan du tittar på just nu finns på github utifall det skulle vara intressant att kolla på källkoden. Både servern och klienten finns där.</span>
+            </div>
+      </section>
+
+      <section ng-show="vm.foundLetter" class="section projects-section">
+            <h2 class="section-title"><i class="fa fa-paper-plane"></i>Personligt Brev</h2>
+            <div class="intro">
+            </div>
+            <div class="item">
+                  <span class="project-tagline">{{vm.personalLetter.Description}} </span>
+            </div>
+      </section>
+
+      <section class="skills-section section">
+            <h2 class="section-title"><i class="fa fa-rocket"></i>Tekniker &amp; Språk</h2>
+            <br/>
+            <div class="skillset">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:1}" " on-finish-render="ngRepeatFinished " class="item ">
+                        <h3 class="level-title ">{{tech.Name}}</h3>
+                        <div class="level-bar ">
+                              <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">
+                              </div>
+                        </div>
+                  </div>
+      </section>
+
+       <section class="skills-section section ">
+            <h2 class="section-title "><i class="fa fa-rocket "></i>Javascript Relaterat</h2>
+            <br/>
+            <div class="skillset ">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:2} "" on-finish-render="ngRepeatFinished" class="item">
+                        <h3 class="level-title">{{tech.Name}}</h3>
+                        <div class="level-bar">
+                              <div class="level-bar-inner" data-level="{{tech.Percentage}}%">
+                              </div>
+                        </div>
+                  </div>
+      </section>
+
+      <section class="skills-section section">
+            <h2 class="section-title"><i class="fa fa-rocket"></i>Utvecklings Miljöer</h2>
+            <br/>
+            <div class="skillset">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:3}" " on-finish-render="ngRepeatFinished " class="item ">
+                        <h3 class="level-title ">{{tech.Name}}</h3>
+                        <div class="level-bar ">
+                              <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">
+                              </div>
+                        </div>
+                  </div>
+      </section>
       </div>
-      <div class="item">
-         <span class="project-title"><a target="_blank" href="http://www.itmastaren.se">It-Mästaren</a></span> -
-         <span class="project-tagline">Fick uppdraget att bygga ett mer användarvänligt sätt för dom på It-mästaren att stämpla sin tid. Dom hade
-                  ett system innan som bjöd in många misstag och därför vart data felaktig i databasen. Se projektet under
-                  "Instämplings system".</span>
-      </div>
-   </section>
-   <section class="section projects-section">
-      <h2 class="section-title"><i class="fa fa-archive"></i>Projekt</h2>
-      <div class="intro">
-      </div>
-      <div class="item">
-         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Barbershop">Bokningssystem För Frisörer</a></span>         - <span class="project-tagline">System för att kunder ska kunna boka tid hos en frisör online. Bästa med det här projektet var alla nya tekniker och principer som ligger bakom när det kommer till server sidan av programmering. </span>
-      </div>
-      <div class="item">
-         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/NemoClient">Instämplingssystem</a></span>         - <span class="project-tagline">Redan från start hade jag en stark plan att jag ville bredda mina kunskaper inom frontend, så jag försökte lära mig allt om hur man ska bära sig åt för att vara en stark frontend utvecklare. </span>
-      </div>
-      <div class="item">
-         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Curriculum-Vitae/tree/master/Admin%20Mobile%20Application">Admin Mobil App</a></span>         - <span class="project-tagline">Detta projekt är inte klar än, men tanken är att jag ska  ha en 
-            admin app till min telefon så jag kan sköta om innehållet på min cv hemsida. Det är också för att få bättre förståelse för tekniken Ionic som är en häftig teknik som tillåter mig att göra hybrid appar med html/css och javascript.</span>
-      </div>
-      <div class="item">
-         <span class="project-title"><a target="_blank" href="https://github.com/Tinee/Curriculum-Vitae">Mitt Cv</a></span>         - <span class="project-tagline">Hemsidan du tittar på just nu finns på github ifall det skulle vara intressant att kolla på källkoden. Både servern och klienten finns där.</span>
-      </div>
-   </section>
-   <section ng-show="vm.foundLetter" class="section projects-section">
-      <h2 class="section-title"><i class="fa fa-paper-plane"></i>Personligt Brev</h2>
-      <div class="intro">
-      </div>
-      <div class="item">
-         <span class="project-tagline">{{vm.personalLetter.Description}} </span>
-      </div>
-   </section>
-   <section class="skills-section section">
-      <h2 class="section-title"><i class="fa fa-rocket"></i>Tekniker &amp; Språk</h2>
-      <br/>
-      <br/>
-      <div class="skillset">
-         <div class="item">
-            <h3 class="level-title">C#</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="96%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Web-Api</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="85%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Entity Framework</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="77%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Code First Migrations</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="72%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Angular</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="66%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Mvc</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="60%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Sql</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="55%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Javascript</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="49%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Node</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="48%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">MongoDb</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="47%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Express</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="46%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Wpf</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="45%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Active Directory</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="43%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Angular Material Design</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="41%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Typescript</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="39%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Microsoft Azure</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="37%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Ionic</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="35%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">HTML5 &amp; CSS</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="33%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Meteor</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="18%">
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <section class="skills-section section">
-      <h2 class="section-title"><i class="fa fa-laptop"></i>Utvecklings Miljöer</h2>
-      <div class="skillset">
-         <div class="item">
-            <h3 class="level-title">Visual Studio Code</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="98%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Visual Studio 2015</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="80%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Postman</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="71%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Sql Server Mangement</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="60%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">GitHub</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="56%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Git</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="39%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Team Foundation Server</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="38%">
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <h3 class="level-title">Kommandotolken</h3>
-            <div class="level-bar">
-               <div class="level-bar-inner" data-level="29%">
-               </div>
-            </div>
-         </div>
-      </div>
-</div>
-</section>
-</div>

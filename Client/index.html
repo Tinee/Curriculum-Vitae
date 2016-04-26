@@ -18,12 +18,12 @@
    <link rel="stylesheet" href="app/plugins/font-awesome/css/font-awesome.css">
    <link rel="stylesheet" href="app/plugins/angular-toastr/dist/angular-toastr.css">
    <link rel="stylesheet" href="app/plugins/angular-block-ui/dist/angular-block-ui.min.css">
-   
+
    <link id="theme-style" rel="stylesheet" href="app/assets/css/styles.css">
 </head>
 
 <body ng-cloak>
-   
+
    <div ui-view class="wrapper">
    </div>
 
@@ -42,14 +42,16 @@
    <script type="text/javascript" src="app/plugins/angular-toastr/dist/angular-toastr.tpls.js"></script>
    <script type="text/javascript" src="app/plugins/angular-local-storage/dist/angular-local-storage.min.js"></script>
    <script type="text/javascript" src="app/plugins/angular-block-ui/dist/angular-block-ui.min.js"></script>
-   
+
 
    <!-- Modules  -->
    <script src="app/app.js"></script>
    <script src="app/core/app.core.js"></script>
    <script src="app/layout/layout.module.js"></script>
    <script src="app/factories/factories.module.js"></script>
-   
+   <script src="app/directives/directives.module.js"></script>
+
+
    <!-- Configs-->
    <script src="app/core/config.js"></script>
 
@@ -61,6 +63,11 @@
 
    <!-- Dataservice-->
    <script type="text/javascript" src="app/core/dataservice.js"></script>
+
+   <!-- Directives-->
+   <script type="text/javascript" src="app/directives/onFinishRender.js"></script>
+
+
 </body>
 
 </html>
