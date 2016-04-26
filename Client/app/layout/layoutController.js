@@ -5,8 +5,8 @@
         .module('layout.module')
         .controller('LayoutController', LayoutController);
 
-    LayoutController.$inject = ['levelbar', 'dataservice', 'toastr', 'localStorageService', '$scope'];
-    function LayoutController(levelbar, dataservice, toastr, localStorageService, $scope) {
+    LayoutController.$inject = ['levelbar', 'dataservice', 'toastr', 'localStorageService', '$scope', 'blockUI'];
+    function LayoutController(levelbar, dataservice, toastr, localStorageService, $scope, blockUI) {
         var vm = this;
 
         vm.personalLetter = null;
@@ -26,6 +26,7 @@
         });
 
         function activate() {
+
             var personalLetter = getLocalStorage('personalLetter')
             if (personalLetter === null) {
                 $("#myModal").modal();
@@ -66,12 +67,14 @@
         }
 
         function getPersonalLetter(companyKey) {
-
+            blockUI.start();
             dataservice.personalLetters().get({ companyKey: companyKey }, function (response) {
 
                 vm.personalLetter = response;
                 vm.foundLetter = true;
                 localStorageService.set('personalLetter', vm.personalLetter);
+
+                blockUI.stop();
 
                 $('#myModal').modal('hide');
                 toastr.success('Erat personliga brev ligger nu på hemsidan.', 'Hej ' + vm.personalLetter.Company.Name, {
