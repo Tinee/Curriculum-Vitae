@@ -10,12 +10,14 @@
       var vm = this;
 
 
-      activate();
+
       vm.TechnicianToEdit = {
          Name: "",
          Percentage: 0,
          Type: 0
       };
+
+       activate();
       ////////////////
 
       function activate() {
