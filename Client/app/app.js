@@ -3,9 +3,10 @@
 
    angular.module('app', [
       'app.core',
-      
+
       'layout.module',
-      'factories.module'
+      'factories.module',
+      'directives.module'
    ]).config([
       '$stateProvider',
        '$locationProvider',
