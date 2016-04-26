@@ -195,7 +195,7 @@
             <h2 class="section-title"><i class="fa fa-rocket"></i>Tekniker &amp; Språk</h2>
             <br/>
             <div class="skillset">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:1}" " on-finish-render="ngRepeatFinished " class="item ">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:1} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished " class="item ">
                         <h3 class="level-title ">{{tech.Name}}</h3>
                         <div class="level-bar ">
                               <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">
@@ -208,7 +208,7 @@
             <h2 class="section-title "><i class="fa fa-rocket "></i>Javascript Relaterat</h2>
             <br/>
             <div class="skillset ">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:2} "" on-finish-render="ngRepeatFinished" class="item">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:2}| orderBy: ['Type','-Percentage'] "" on-finish-render="ngRepeatFinished" class="item">
                         <h3 class="level-title">{{tech.Name}}</h3>
                         <div class="level-bar">
                               <div class="level-bar-inner" data-level="{{tech.Percentage}}%">
@@ -221,7 +221,7 @@
             <h2 class="section-title"><i class="fa fa-rocket"></i>Utvecklings Miljöer</h2>
             <br/>
             <div class="skillset">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:3}" " on-finish-render="ngRepeatFinished " class="item ">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:3} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished " class="item ">
                         <h3 class="level-title ">{{tech.Name}}</h3>
                         <div class="level-bar ">
                               <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">

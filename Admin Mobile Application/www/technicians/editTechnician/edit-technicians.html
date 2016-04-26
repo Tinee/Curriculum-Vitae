@@ -1,18 +1,18 @@
 <ion-view>
-   <ion-nav-bar class="bar-positive">
-      <ion-nav-back-button class="button">
-         <i class="ion-arrow-left-c"></i> Back
-      </ion-nav-back-button>
-   </ion-nav-bar>
-   <ion-nav-title>
-      Edit Technician
-   </ion-nav-title>
-   <ion-content>
-      <form name="editTechnicianForm" role="form">
-         <label class="item item-input" ion-item>
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-back-button class="button">
+      <i class="ion-arrow-left-c"></i> Back
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-nav-title>
+    Edit Technician
+  </ion-nav-title>
+  <ion-content>
+    <form name="editTechnicianForm" role="form">
+      <label class="item item-input" ion-item>
                     <input ng-model="vm.TechnicianToEdit.Name" ng-required="true" type="text" placeholder="Name" />
                 </label>
-         <label class="item item-input item-select">
+      <label class="item item-input item-select">
         <div class="input-label">
                     Type
               </div>
@@ -22,14 +22,14 @@
               <option value="3" >Devlopement Enviroment</option>
            </select>
 </label>
-         <label class="item">
+      <label class="item">
                  <div class="item-content">{{vm.TechnicianToEdit.Percentage}}%</div>
                   <div class="range range-positive">
                  <input ng-model="vm.TechnicianToEdit.Percentage"  type="range" name="volume" min="0" max="100" value="14"  >
                </div>
               </label>
 
-         <button ng-disabled="editTechnicianForm.$invalid" ng-click="" class="button button-block button-positive">Save</button>
-      </form>
-   </ion-content>
+      <button ng-disabled="editTechnicianForm.$invalid" ng-click="" class="button button-block button-positive">Save</button>
+    </form>
+  </ion-content>
 </ion-view>
