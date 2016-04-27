@@ -12,6 +12,7 @@
 
         vm.data = {};
         vm.companyNotFound = false;
+    
 
         activate();
 
@@ -19,9 +20,15 @@
         ////////////////
 
         function activate() {
+            getCompany();
+        }
+
+        function getCompany() {
+
             dataservice.personalLetterByCompanyId().get({ id: $stateParams.id }, function (response) {
                 vm.data = response;
             }, function () {
+
                 vm.companyNotFound = true;
             });
         }
