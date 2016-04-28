@@ -1,13 +1,15 @@
-
 <ion-view view-title="Account">
         <ion-nav-bar class="bar-positive">
-</ion-nav-bar>
-     <ion-content>
-          <ion-list>
-        <div class="list">
-<button ng-click="vm.logout()" class="button button-block button-assertive">Logout</button>
-</div>
-   </ion-list>
-     </ion-content>
+        </ion-nav-bar>
+        <ion-content>
+                <ion-list>
+                        <div class="list">
+                                <ion-checkbox ng-model="isChecked">Notifications</ion-checkbox>
+                                <br>    
+                                <center>
+                                        <button ng-click="vm.logout()" class="button  button-assertive button-large">Logout</button>
+                                </center>
+                        </div>
+                </ion-list>
+        </ion-content>
 </ion-view>
-
