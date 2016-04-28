@@ -67,7 +67,7 @@ angular.module('app', [
         }
       })
 
-       .state('tab.technicians-detail', {
+      .state('tab.technicians-detail', {
         url: '/technicians/:id',
         views: {
           'tab-technicians': {
