@@ -67,11 +67,11 @@ angular.module('app', [
         }
       })
 
-       .state('tab.technicians-detail', {
+      .state('tab.technicians-detail', {
         url: '/technicians/:id',
         views: {
           'tab-technicians': {
-            templateUrl: './technicians/editTechnician/edit-technicians.html',
+            templateUrl: './technicians/editTechnician/edit-technician.html',
             controller: 'EditTechnicianController as vm'
           }
         }
