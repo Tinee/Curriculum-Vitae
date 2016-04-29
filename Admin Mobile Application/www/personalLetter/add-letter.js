@@ -9,8 +9,6 @@
    function LetterController() {
       var vm = this;
       
-
-
       activate();
 
       ////////////////

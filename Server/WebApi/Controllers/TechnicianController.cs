@@ -27,13 +27,13 @@ namespace Server.Controllers
             if (company == null) return NotFound();
             return Ok(company);
         }
-
+        [Authorize]
         public IHttpActionResult Post(Technician technician)
         {
             _technicianHandler.Post(technician);
             return Ok();
         }
-
+        [Authorize]
         public IHttpActionResult Delete(int id)
         {
             _technicianHandler.Delete(id);

@@ -25,7 +25,6 @@ namespace Business_Logic.Database
             var technician = _uow.TechnicianRepository.Get(x => x.Id == id).FirstOrDefault();
             return technician?.ToContract();
         }
-
         public void Post(Technician technician)
         {
             _uow.TechnicianRepository.CreateOrUpdate(technician.ToDatabaseEntitie());
