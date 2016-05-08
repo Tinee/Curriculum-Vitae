@@ -42,6 +42,15 @@
                   <li>Fotboll</li>
             </ul>
       </div>
+
+      <div class="interests-container container-block">
+            <h2 class="container-block-title">Ladda ner</h2>
+            <ul class="list-unstyled interests-list">
+                  <li>
+                      <a target="_self" href="..\assets\files\Curriculum-Vitae.pdf" download="MarcusCarlssonCv.pdf">Dokumentbaserat CV</a>
+                  </li>
+            </ul>
+      </div>
       <div class="interests-container container-block">
             <h2 class="container-block-title">Referenser</h2>
             <ul class="list-unstyled interests-list">
@@ -195,7 +204,8 @@
             <h2 class="section-title"><i class="fa fa-rocket"></i>Tekniker &amp; Språk</h2>
             <br/>
             <div class="skillset">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:1} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished " class="item ">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:1} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished
+                        " class="item ">
                         <h3 class="level-title ">{{tech.Name}}</h3>
                         <div class="level-bar ">
                               <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">
@@ -205,10 +215,11 @@
       </section>
 
        <section class="skills-section section ">
-            <h2 class="section-title "><i class="fa fa-angellist"></i>Javascript Relaterat</h2>
+            <h2 class="section-title "><i class="fa fa-angellist "></i>Javascript Relaterat</h2>
             <br/>
             <div class="skillset ">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:2}| orderBy: ['Type','-Percentage'] "" on-finish-render="ngRepeatFinished" class="item">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:2}| orderBy: [ 'Type', '-Percentage'] "" on-finish-render="ngRepeatFinished"
+                        class="item">
                         <h3 class="level-title">{{tech.Name}}</h3>
                         <div class="level-bar">
                               <div class="level-bar-inner" data-level="{{tech.Percentage}}%">
@@ -221,7 +232,8 @@
             <h2 class="section-title"><i class="fa fa-android"></i>Utvecklings Miljöer</h2>
             <br/>
             <div class="skillset">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:3} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished " class="item ">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:3} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished
+                        " class="item ">
                         <h3 class="level-title ">{{tech.Name}}</h3>
                         <div class="level-bar ">
                               <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">
