@@ -5,13 +5,14 @@
         .module('layout.module')
         .controller('LayoutController', LayoutController);
 
-    LayoutController.$inject = ['levelbar', 'dataservice', 'toastr', 'localStorageService', '$scope', 'blockUI'];
-    function LayoutController(levelbar, dataservice, toastr, localStorageService, $scope, blockUI) {
+    LayoutController.$inject = ['levelbar', 'dataservice', 'toastr', 'localStorageService', '$scope', 'blockUI', 'courses'];
+    function LayoutController(levelbar, dataservice, toastr, localStorageService, $scope, blockUI, courses) {
         var vm = this;
 
         vm.personalLetter = null;
         vm.foundLetter = false;
         vm.companyKey = "";
+        vm.courses = courses.get();
 
         vm.getPersonalLetter = getPersonalLetter;
         vm.openModal = openModal;
@@ -23,6 +24,9 @@
 
         $scope.$on('ngRepeatFinished', function (ngRepeatFinishedEvent) {
             levelbar.getValues();
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
         });
 
         function activate() {
@@ -30,14 +34,13 @@
             var personalLetter = getLocalStorage('personalLetter')
             if (personalLetter === null) {
                 $("#myModal").modal();
-
             }
             else {
                 vm.foundLetter = true;
                 vm.personalLetter = personalLetter;
             }
 
-            getTechnicians()
+            getTechnicians();
         }
 
         function openModal() {
@@ -62,7 +65,6 @@
 
         function getTechnicians() {
             vm.technicians = dataservice.technicians().query(function (response) {
-
             });
         }
 

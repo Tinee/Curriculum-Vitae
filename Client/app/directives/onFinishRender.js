@@ -9,5 +9,5 @@ var module = angular.module('directives.module')
                 });
             }
         }
-    }
+    };
 });

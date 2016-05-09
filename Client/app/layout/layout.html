@@ -79,7 +79,7 @@
             <section>
                   <div class="modal-content">
                         <div style="background-color:#42A8C0;" class="modal-header" style="padding:35px 50px;">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
                               <center>
                                     <h3 style="color:white;font-family:Roboto">Hämta Personligt Brev</h4>
             <center/>
@@ -193,52 +193,63 @@
             </div>
       </section>
 
-      <section ng-show="vm.foundLetter" class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-paper-plane"></i>Personligt Brev</h2>
-            <div class="intro">
+      <section ng-show="vm.foundLetter " class="section projects-section ">
+            <h2 class="section-title "><i class="fa fa-paper-plane "></i>Personligt Brev</h2>
+            <div class="intro ">
             </div>
-            <div class="item">
-                  <span class="project-tagline">{{vm.personalLetter.Description}} </span>
+            <div class="item ">
+                  <span class="project-tagline ">{{vm.personalLetter.Description}} </span>
             </div>
       </section>
 
       <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-rocket"></i>Tekniker &amp; Språk</h2>
+            <h2 class="section-title"><i class=" fa fa-graduation-cap"></i>Skolans kurser</h2>
+            <span class="project-tagline ">Håll över kursen för att se betyget på respektive kurs.<span>
+            <br>  
             <br/>
             <div class="skillset">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:1} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished
+                  <div ng-repeat="course in vm.courses" class="item ">
+                        <h3 data-toggle="tooltip" title="{{course.grade}}" data-placement="top" style="font-size:16px" class="level-title ">{{course.courseName}}</h3>
+                  </div>
+      </section>
+
+      <section class="skills-section section ">
+            <h2 class="section-title "><i class="fa fa-rocket "></i>Tekniker &amp; Språk</h2>
+            <br/>
+            <div class="skillset ">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:1} | orderBy: [ 'Type', '-Percentage'] " " on-finish-render="ngRepeatFinished
                         " class="item ">
                         <h3 class="level-title ">{{tech.Name}}</h3>
                         <div class="level-bar ">
-                              <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">
+                              <div class="level-bar-inner " data-level="{{tech.Percentage}}% ">
                               </div>
                         </div>
                   </div>
       </section>
 
-       <section class="skills-section section ">
+      <section class="skills-section section ">
             <h2 class="section-title "><i class="fa fa-angellist "></i>Javascript Relaterat</h2>
             <br/>
             <div class="skillset ">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:2}| orderBy: [ 'Type', '-Percentage'] "" on-finish-render="ngRepeatFinished"
-                        class="item">
-                        <h3 class="level-title">{{tech.Name}}</h3>
-                        <div class="level-bar">
-                              <div class="level-bar-inner" data-level="{{tech.Percentage}}%">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:2}| orderBy: [ 'Type', '-Percentage'] " " on-finish-render="ngRepeatFinished "
+                        class="item ">
+                        <h3 class="level-title ">{{tech.Name}}</h3>
+                        <div class="level-bar ">
+                              <div class="level-bar-inner " data-level="{{tech.Percentage}}% ">
                               </div>
                         </div>
                   </div>
       </section>
 
-      <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-android"></i>Utvecklings Miljöer</h2>
+      <section class="skills-section section ">
+            <h2 class="section-title "><i class="fa fa-android "></i>Utvecklings Miljöer</h2>
             <br/>
-            <div class="skillset">
-                  <div ng-repeat="tech in vm.technicians | filter:{Type:3} | orderBy: ['Type','-Percentage']" " on-finish-render="ngRepeatFinished
+            <div class="skillset ">
+                  <div ng-repeat="tech in vm.technicians | filter:{Type:3} | orderBy: [ 'Type', '-Percentage'] " " on-finish-render="ngRepeatFinished
                         " class="item ">
                         <h3 class="level-title ">{{tech.Name}}</h3>
                         <div class="level-bar ">
-                              <div  class="level-bar-inner " data-level="{{tech.Percentage}}% ">
+                              <div class="level-bar-inner " data-level="{{tech.Percentage}}% ">
                               </div>
                         </div>
                   </div>
